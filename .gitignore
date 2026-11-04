@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# big or regenerable outputs stay local
+**/frames/
+**/checkpoints/*.zip
+**/renders/
+*.mp4
+*.wav
+*.blend
+.env
