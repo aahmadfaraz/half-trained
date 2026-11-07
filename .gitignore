@@ -10,3 +10,4 @@ __pycache__/
 *.wav
 *.blend
 .env
+**/attempts.npz

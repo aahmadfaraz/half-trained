@@ -1,0 +1,1 @@
+{"model": "runs/base_s2/final.zip", "broken": "none", "policy": "deterministic", "episodes": 100, "test_seeds": [1000, 1099], "success_rate": 1.0, "mean_score": 264.5437197120709, "std_score": 20.21512342062726, "median_score": 262.7291286378629, "mean_steps": 299.57, "action_share": {"nothing": 0.2844, "left engine": 0.1188, "main engine": 0.4735, "right engine": 0.1232}}

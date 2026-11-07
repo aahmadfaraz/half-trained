@@ -1,0 +1,1 @@
+{"model": "untrained:1", "broken": "none", "policy": "stochastic", "episodes": 5, "test_seeds": [1000, 1004], "success_rate": 0.0, "mean_score": -224.0199210160231, "std_score": 80.67016184768853, "median_score": -203.3948340011774, "mean_steps": 111.2, "action_share": {"nothing": 0.268, "left engine": 0.2392, "main engine": 0.2788, "right engine": 0.214}}
