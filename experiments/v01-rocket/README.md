@@ -3,6 +3,8 @@
 A PPO agent learns Gymnasium's `LunarLander-v3` from a random start, then one side engine is switched off.
 Every number in the video comes from the files in this folder.
 
+**Watch the video:** https://youtu.be/_D4dPklPbP8
+
 ## Results
 
 **Training (seed 1, 1.5M moves, 17.8 min on one Mac, CPU only)**: 4,995 attempts.
