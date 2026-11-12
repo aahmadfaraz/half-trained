@@ -1,0 +1,66 @@
+[main_2000] block 256
+[main_2000] full-memory val loss 1.4670
+[main_2000] loss at context 1 / 256: 2.613 / 1.532
+[main_2000] {"turns": 232, "turns_per_1000_chars": 6.9, "valid_speaker_share": 0.9871, "same_speaker_twice_share": 0.1467, "new_speaker_share_after_first": 0.6413, "handovers": 157, "handover_pairs_that_talk_share": 0.6369, "line_len_mean": 40.0, "lines_over_80_share": 0.0, "words_3plus": 4968, "real_word_share": 0.9666, "copied_30char_share": 0.0, "chars": 33600}
+[main_2000] saved runs/eval/main_2000.json
+[main_5000] block 256
+[main_5000] full-memory val loss 1.7413
+[main_5000] loss at context 1 / 256: 2.543 / 1.758
+[main_5000] {"turns": 291, "turns_per_1000_chars": 8.66, "valid_speaker_share": 1.0, "same_speaker_twice_share": 0.1687, "new_speaker_share_after_first": 0.5391, "handovers": 202, "handover_pairs_that_talk_share": 0.8911, "line_len_mean": 37.9, "lines_over_80_share": 0.0, "words_3plus": 4924, "real_word_share": 0.9838, "copied_30char_share": 0.014, "chars": 33600}
+[main_5000] saved runs/eval/main_5000.json
+[mem32_2000] block 32
+[mem32_2000] full-memory val loss 1.4772
+[mem32_2000] loss at context 1 / 32: 2.475 / 1.438
+[mem32_2000] {"turns": 242, "turns_per_1000_chars": 7.2, "valid_speaker_share": 0.9917, "same_speaker_twice_share": 0.0258, "new_speaker_share_after_first": 0.9433, "handovers": 189, "handover_pairs_that_talk_share": 0.1058, "line_len_mean": 41.8, "lines_over_80_share": 0.035, "words_3plus": 4961, "real_word_share": 0.9786, "copied_30char_share": 0.0029, "chars": 33600}
+[mem32_2000] saved runs/eval/mem32_2000.json
+[mem8_2000] block 8
+[mem8_2000] full-memory val loss 1.4872
+[mem8_2000] loss at context 1 / 8: 2.491 / 1.444
+[mem8_2000] {"turns": 216, "turns_per_1000_chars": 6.43, "valid_speaker_share": 0.963, "same_speaker_twice_share": 0.0119, "new_speaker_share_after_first": 0.9643, "handovers": 166, "handover_pairs_that_talk_share": 0.1145, "line_len_mean": 51.3, "lines_over_80_share": 0.1895, "words_3plus": 5031, "real_word_share": 0.967, "copied_30char_share": 0.0011, "chars": 33600}
+[mem8_2000] saved runs/eval/mem8_2000.json
+[mem1_2000] block 1
+[mem1_2000] full-memory val loss 2.4458
+[mem1_2000] loss at context 1 / 1: 2.500 / 2.500
+[mem1_2000] {"turns": 29, "turns_per_1000_chars": 0.86, "valid_speaker_share": 0.0, "same_speaker_twice_share": 0.0, "new_speaker_share_after_first": 1.0, "handovers": 8, "handover_pairs_that_talk_share": 0.0, "line_len_mean": 53.2, "lines_over_80_share": 0.2329, "words_3plus": 3894, "real_word_share": 0.143, "copied_30char_share": 0.0, "chars": 33600}
+[mem1_2000] saved runs/eval/mem1_2000.json
+[mem1_s2_5000] block 1
+[mem1_s2_5000] full-memory val loss 2.4498
+[mem1_s2_5000] loss at context 1 / 1: 2.499 / 2.499
+[mem1_s2_5000] {"turns": 29, "turns_per_1000_chars": 0.86, "valid_speaker_share": 0.0, "same_speaker_twice_share": 0.0, "new_speaker_share_after_first": 0.8571, "handovers": 7, "handover_pairs_that_talk_share": 0.0, "line_len_mean": 54.9, "lines_over_80_share": 0.237, "words_3plus": 3899, "real_word_share": 0.1416, "copied_30char_share": 0.0, "chars": 33600}
+[mem1_s2_5000] saved runs/eval/mem1_s2_5000.json
+[main_s2b_2000] block 256
+[main_s2b_2000] full-memory val loss 1.4671
+[main_s2b_2000] loss at context 1 / 256: 2.591 / 1.498
+[main_s2b_2000] {"turns": 282, "turns_per_1000_chars": 8.39, "valid_speaker_share": 0.9894, "same_speaker_twice_share": 0.1737, "new_speaker_share_after_first": 0.5381, "handovers": 195, "handover_pairs_that_talk_share": 0.7282, "line_len_mean": 40.4, "lines_over_80_share": 0.0, "words_3plus": 4880, "real_word_share": 0.9695, "copied_30char_share": 0.0028, "chars": 33600}
+[main_s2b_2000] saved runs/eval/main_s2b_2000.json
+[mem8_s2_2000] block 8
+[mem8_s2_2000] full-memory val loss 1.5061
+[mem8_s2_2000] loss at context 1 / 8: 2.502 / 1.467
+[mem8_s2_2000] {"turns": 195, "turns_per_1000_chars": 5.8, "valid_speaker_share": 0.9795, "same_speaker_twice_share": 0.0204, "new_speaker_share_after_first": 0.9524, "handovers": 144, "handover_pairs_that_talk_share": 0.1042, "line_len_mean": 52.3, "lines_over_80_share": 0.1823, "words_3plus": 4983, "real_word_share": 0.9701, "copied_30char_share": 0.0009, "chars": 33600}
+[mem8_s2_2000] saved runs/eval/mem8_s2_2000.json
+[mem32_s2_2000] block 32
+[mem32_s2_2000] full-memory val loss 1.4561
+[mem32_s2_2000] loss at context 1 / 32: 2.482 / 1.401
+[mem32_s2_2000] {"turns": 257, "turns_per_1000_chars": 7.65, "valid_speaker_share": 0.9883, "same_speaker_twice_share": 0.0095, "new_speaker_share_after_first": 0.9476, "handovers": 208, "handover_pairs_that_talk_share": 0.0962, "line_len_mean": 41.5, "lines_over_80_share": 0.0266, "words_3plus": 4970, "real_word_share": 0.974, "copied_30char_share": 0.0055, "chars": 33600}
+[mem32_s2_2000] saved runs/eval/mem32_s2_2000.json
+[main_s3_2000] block 256
+[main_s3_2000] full-memory val loss 1.4530
+[main_s3_2000] loss at context 1 / 256: 2.560 / 1.498
+[main_s3_2000] {"turns": 299, "turns_per_1000_chars": 8.9, "valid_speaker_share": 0.9799, "same_speaker_twice_share": 0.0996, "new_speaker_share_after_first": 0.6494, "handovers": 226, "handover_pairs_that_talk_share": 0.6549, "line_len_mean": 40.7, "lines_over_80_share": 0.0014, "words_3plus": 4894, "real_word_share": 0.9687, "copied_30char_share": 0.0075, "chars": 33600}
+[main_s3_2000] saved runs/eval/main_s3_2000.json
+[mem8_s3_2000] block 8
+[mem8_s3_2000] full-memory val loss 1.4978
+[mem8_s3_2000] loss at context 1 / 8: 2.486 / 1.479
+[mem8_s3_2000] {"turns": 186, "turns_per_1000_chars": 5.54, "valid_speaker_share": 0.9516, "same_speaker_twice_share": 0.0288, "new_speaker_share_after_first": 0.9568, "handovers": 135, "handover_pairs_that_talk_share": 0.1037, "line_len_mean": 47.8, "lines_over_80_share": 0.1562, "words_3plus": 5062, "real_word_share": 0.9737, "copied_30char_share": 0.0009, "chars": 33600}
+[mem8_s3_2000] saved runs/eval/mem8_s3_2000.json
+[mem32_s3_2000] block 32
+[mem32_s3_2000] full-memory val loss 1.4568
+[mem32_s3_2000] loss at context 1 / 32: 2.479 / 1.403
+[mem32_s3_2000] {"turns": 264, "turns_per_1000_chars": 7.86, "valid_speaker_share": 0.9848, "same_speaker_twice_share": 0.0046, "new_speaker_share_after_first": 0.9444, "handovers": 215, "handover_pairs_that_talk_share": 0.107, "line_len_mean": 41.6, "lines_over_80_share": 0.0254, "words_3plus": 4885, "real_word_share": 0.9756, "copied_30char_share": 0.0019, "chars": 33600}
+[mem32_s3_2000] saved runs/eval/mem32_s3_2000.json
+[mem1_s3_2000] block 1
+[mem1_s3_2000] full-memory val loss 2.4538
+[mem1_s3_2000] loss at context 1 / 1: 2.504 / 2.504
+[mem1_s3_2000] {"turns": 28, "turns_per_1000_chars": 0.83, "valid_speaker_share": 0.0, "same_speaker_twice_share": 0.0, "new_speaker_share_after_first": 1.0, "handovers": 6, "handover_pairs_that_talk_share": 0.0, "line_len_mean": 58.8, "lines_over_80_share": 0.2703, "words_3plus": 3888, "real_word_share": 0.1461, "copied_30char_share": 0.0, "chars": 33600}
+[mem1_s3_2000] saved runs/eval/mem1_s3_2000.json
+eval done Mon Nov  9 21:15:57 +04 2026

@@ -1,0 +1,16 @@
+[mem1_s2] 10,697,921 parameters, vocab 65, block 1, device mps
+[mem1_s2] it     0    0.0 min  train 4.311  val 4.304  real words {'words_3plus': 248, 'in_shakespeare': 0.0081, 'in_dictionary': 0.0363}  |  'CZgj.KUvLaZpuDbuv!mkRfWlarhd3NgnZLFJJ;rTpM;qB3iJbW\nnjjb.WZzg&RzUqsqy$T'
+[mem1_s2] it    25    1.0 min  train 2.702  val 2.723  real words {'words_3plus': 286, 'in_shakespeare': 0.1503, 'in_dictionary': 0.2657}  |  'C.\nj nd matherd vimarf larhanNGe beJ ireson Beit t\nFar .Whig f blsorle'
+[mem1_s2] it    50    2.0 min  train 2.526  val 2.531  real words {'words_3plus': 282, 'in_shakespeare': 0.1064, 'in_dictionary': 0.2163}  |  'Cagiche matherbuvimare larhand n ber ireshe arit t\nI\nGour s tha ls, le'
+[mem1_s2] it   100    3.9 min  train 2.485  val 2.508  real words {'words_3plus': 299, 'in_shakespeare': 0.1237, 'in_dictionary': 0.2676}  |  'Cagicouclatherd vimathalary wngn ber ireshe arit t\nIOUCERI atha ls, le'
+[mem1_s2] it   200    7.7 min  train 2.472  val 2.495  real words {'words_3plus': 286, 'in_shakespeare': 0.1049, 'in_dictionary': 0.2028}  |  'Cand nd matherd vimarf laredenge ber ireshe arit t\n\n\nG y wie f his, le'
+[mem1_s2] it   300   11.5 min  train 2.467  val 2.486  real words {'words_3plus': 290, 'in_shakespeare': 0.1414, 'in_dictionary': 0.2621}  |  'Cagicouclatherbur mare lared ngn ber ireson arit t\nI:\nCEr s tha lsor s'
+[mem1_s2] it   500   19.3 min  train 2.463  val 2.494  real words {'words_3plus': 291, 'in_shakespeare': 0.1512, 'in_dictionary': 0.2405}  |  'Cand.\nK:\n\nWifrd vimare laredengn ber ireshe arit t\nI:\n\n\nWis tha ls, le'
+[mem1_s2] it   750   29.0 min  train 2.461  val 2.492  real words {'words_3plus': 291, 'in_shakespeare': 0.1375, 'in_dictionary': 0.2474}  |  'Canjondelatherd vimare laredenge ber ireshe arit t\nI:\n\n\nWhie f his, le'
+[mem1_s2] it  1000   38.2 min  train 2.459  val 2.492  real words {'words_3plus': 276, 'in_shakespeare': 0.1268, 'in_dictionary': 0.2319}  |  'Cand t clatherburimare laredengn ber ireshe arit t\nIO:\n\nWis tha ls, le'
+[mem1_s2] it  1500   57.5 min  train 2.457  val 2.490  real words {'words_3plus': 288, 'in_shakespeare': 0.1111, 'in_dictionary': 0.2222}  |  'Cand. thistherd vimare laredengn ber ireshe arit t\nIOUCERI athe ls, le'
+[mem1_s2] it  2000   76.9 min  train 2.457  val 2.491  real words {'words_3plus': 300, 'in_shakespeare': 0.1267, 'in_dictionary': 0.2567}  |  'Canjond matherd vimare laredenge ber ireson arit t\nIOUCERI atha ls, le'
+[mem1_s2] it  3000  115.1 min  train 2.454  val 2.489  real words {'words_3plus': 289, 'in_shakespeare': 0.1453, 'in_dictionary': 0.2561}  |  'Cage. thiatherd vimare laredengn ber ireshe arit t\nIOUCEWhie f his, le'
+[mem1_s2] it  4000  151.5 min  train 2.452  val 2.486  real words {'words_3plus': 291, 'in_shakespeare': 0.1375, 'in_dictionary': 0.2543}  |  'Canjond matherd vimare laredengn ber ireson arit t\nIOUCEWhie f his, le'
+[mem1_s2] it  5000  187.7 min  train 2.452  val 2.485  real words {'words_3plus': 288, 'in_shakespeare': 0.1389, 'in_dictionary': 0.2396}  |  'Canjond matherd vimare laredengn ber ireson arit t\nIO:\n\nWis the ls, le'
+[mem1_s2] done: 187.7 min of training (snapshot time excluded)

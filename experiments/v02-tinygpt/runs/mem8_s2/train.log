@@ -1,0 +1,16 @@
+[mem8_s2] 10,700,609 parameters, vocab 65, block 8, device mps
+[mem8_s2] it     0    0.0 min  train 4.292  val 4.290  real words {'words_3plus': 256, 'in_shakespeare': 0.0039, 'in_dictionary': 0.0117}  |  "C.gj.KK\nLGZpG&b&v!mkRfKlarhd'NgnzL!JH;VTpMHKB3igwK\nn!Gb.WH!g&RzUKsqy$T"
+[mem8_s2] it    25    0.4 min  train 2.832  val 2.825  real words {'words_3plus': 317, 'in_shakespeare': 0.0694, 'in_dictionary': 0.1325}  |  'C:\nj\nKE:LGWTN\nbT:!\nTRf\nlarhe N ntihJ iresd theit thra b.r se an lsmy s'
+[mem8_s2] it    50    0.8 min  train 2.408  val 2.405  real words {'words_3plus': 378, 'in_shakespeare': 0.2619, 'in_dictionary': 0.3968}  |  'Cand thelathe buvim thelarganNon ber ires nourit thear yous the lomel,'
+[mem8_s2] it   100    1.7 min  train 2.132  val 2.162  real words {'words_3plus': 381, 'in_shakespeare': 0.4987, 'in_dictionary': 0.6089}  |  'Cram. ENLIUKID:\nWime folarh will be you pon arit ther by with not my s'
+[mem8_s2] it   200    3.4 min  train 1.882  val 1.996  real words {'words_3plus': 379, 'in_shakespeare': 0.6992, 'in_dictionary': 0.7177}  |  'Cand them faurble!\n\nRICHAM:\nWhy link in his sign the joy to the lords,'
+[mem8_s2] it   300    5.1 min  train 1.784  val 1.920  real words {'words_3plus': 379, 'in_shakespeare': 0.8391, 'in_dictionary': 0.8021}  |  'Capilouriant,\nMust befolared, gentleman:\nMy sign them by with not my s'
+[mem8_s2] it   500    8.6 min  train 1.689  val 1.839  real words {'words_3plus': 349, 'in_shakespeare': 0.8739, 'in_dictionary': 0.8338}  |  'Cannot wife for villed and deny.\n\nFRIAR LAURENCE:\n\nI would and his fou'
+[mem8_s2] it   750   13.0 min  train 1.635  val 1.796  real words {'words_3plus': 367, 'in_shakespeare': 0.9074, 'in_dictionary': 0.8801}  |  'Canst the fault of heart;\nWhen not this power it to me the earth so le'
+[mem8_s2] it  1000   17.4 min  train 1.604  val 1.775  real words {'words_3plus': 365, 'in_shakespeare': 0.9507, 'in_dictionary': 0.8767}  |  'Canst the fault of heaven, and not Juliet, I might\nIs by the father le'
+[mem8_s2] it  1500   26.0 min  train 1.569  val 1.750  real words {'words_3plus': 360, 'in_shakespeare': 0.95, 'in_dictionary': 0.8833}  |  'Canst the faults: marry are will be sorrow; and we no by the fails, le'
+[mem8_s2] it  2000   34.6 min  train 1.545  val 1.743  real words {'words_3plus': 345, 'in_shakespeare': 0.9768, 'in_dictionary': 0.9246}  |  "Canst thou art form the arms,\nIn barbarish'd might\nIn blood that so le"
+[mem8_s2] it  3000   52.5 min  train 1.507  val 1.738  real words {'words_3plus': 358, 'in_shakespeare': 0.9721, 'in_dictionary': 0.9218}  |  'Canst thou, friar!\n\nRICHARD III:\nThe prince and be\nreconcile and so lo'
+[mem8_s2] it  4000   69.4 min  train 1.482  val 1.738  real words {'words_3plus': 358, 'in_shakespeare': 0.9721, 'in_dictionary': 0.9162}  |  "Canst thou, friar!\n\nRICHMOND:\nIn God's sake.\n\nISABELLA:\nWhat says my s"
+[mem8_s2] it  5000   86.6 min  train 1.467  val 1.741  real words {'words_3plus': 356, 'in_shakespeare': 0.9831, 'in_dictionary': 0.9045}  |  'Canst thou, friends, follow you.\n\nFRIAR LAURENCE:\n\nFROTH:\nA cause of H'
+[mem8_s2] done: 86.6 min of training (snapshot time excluded)

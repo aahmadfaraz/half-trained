@@ -1,0 +1,33 @@
+{
+ "name": "mem1",
+ "data": "data/tinyshakespeare.txt",
+ "block": 1,
+ "layers": 6,
+ "heads": 6,
+ "embd": 384,
+ "dropout": 0.2,
+ "batch": 16384,
+ "iters": 5000,
+ "lr": 0.001,
+ "seed": 1337,
+ "device": "mps",
+ "snaps": "0,25,50,100,200,300,500,750,1000,1500,2000,3000,4000,5000",
+ "keep": "0,100,300,1000,2000,5000",
+ "n_params": 10697921,
+ "vocab": 65,
+ "chars": "\n !$&',-.3:;?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+ "train_chars": 1003854,
+ "val_chars": 111540,
+ "torch": "2.15.0",
+ "prompts": {
+  "open": "\n",
+  "romeo": "ROMEO:\n",
+  "chat": "YOU:\nWhat is the meaning of life?\n\nHAMLET:\n"
+ },
+ "probe": "ROMEO:\nBut soft, what light through yonder window breaks?",
+ "train_seconds": 12035.0,
+ "final": {
+  "train": 2.4535027241706846,
+  "val": 2.4849546098709108
+ }
+}

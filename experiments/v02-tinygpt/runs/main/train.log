@@ -1,0 +1,16 @@
+[main] 10,795,841 parameters, vocab 65, block 256, device mps
+[main] it     0    0.0 min  train 4.257  val 4.257  real words {'words_3plus': 251, 'in_shakespeare': 0.008, 'in_dictionary': 0.008}  |  'C.gj.nEvLaZpf&b&v!mkRfClawhd3Ngn LnJH;rTpM; BYiJbt\nnjjb.rC; &RzUlCqy$T'
+[main] it    25    0.6 min  train 2.826  val 2.844  real words {'words_3plus': 236, 'in_shakespeare': 0.072, 'in_dictionary': 0.1229}  |  'CZgj.KExLGZTNDbTv!mbRfClaUhA3NIRTLFJH;TThMHTBYIUAR\nxjjb.WCqL&RzUKCqy$T'
+[main] it    50    1.1 min  train 2.525  val 2.525  real words {'words_3plus': 287, 'in_shakespeare': 0.0941, 'in_dictionary': 0.1986}  |  'C::ER:E:LatayDbu:IUIRICIar:ANNIn beJ:\nTThon BEIU:\n\nI: by wie R: lsorou'
+[main] it   100    2.2 min  train 2.451  val 2.477  real words {'words_3plus': 262, 'in_shakespeare': 0.1527, 'in_dictionary': 0.2405}  |  "CrUANOUOLaUTIAUT:IUS:I lar:A'NIn LAJ iTiS:USBeit t n: by wie he l my s"
+[main] it   200    4.5 min  train 2.206  val 2.261  real words {'words_3plus': 352, 'in_shakespeare': 0.2301, 'in_dictionary': 0.3778}  |  'CMALOOUSLIUSILIO:\nmat:\nI whand now Ju:\nThon seit ther by wit fullsor s'
+[main] it   300    6.7 min  train 1.852  val 1.992  real words {'words_3plus': 388, 'in_shakespeare': 0.567, 'in_dictionary': 0.6314}  |  'Ca\n\nNOUCLIUS:\nMuriever, arhave not Jul is not it ther by with not my s'
+[main] it   500   11.4 min  train 1.540  val 1.733  real words {'words_3plus': 356, 'in_shakespeare': 0.8146, 'in_dictionary': 0.7809}  |  'CLARENCE:\nWhere villefor what I have is ponce it the\nrecrif the look o'
+[main] it   750   17.5 min  train 1.366  val 1.594  real words {'words_3plus': 339, 'in_shakespeare': 0.8997, 'in_dictionary': 0.8378}  |  'CaMe:\nI may be so!\n\nRICHARD:\nNone, JuLIET:\nI might not the grantly.\n\nM'
+[main] it  1000   23.1 min  train 1.278  val 1.538  real words {'words_3plus': 360, 'in_shakespeare': 0.9306, 'in_dictionary': 0.8944}  |  'Cannot come.\n\nMENENIUS:\nYou would no more noble better you are blood u'
+[main] it  1500   34.0 min  train 1.154  val 1.489  real words {'words_3plus': 348, 'in_shakespeare': 0.9282, 'in_dictionary': 0.8937}  |  'Clown:\nWell, sir: my fall, deliver Juliet, as I would be put for\nmore '
+[main] it  2000   45.0 min  train 1.052  val 1.474  real words {'words_3plus': 341, 'in_shakespeare': 0.9384, 'in_dictionary': 0.8622}  |  'Come. Come, sir, I knock your general; and you are\nno but such a small'
+[main] it  3000   67.0 min  train 0.861  val 1.549  real words {'words_3plus': 332, 'in_shakespeare': 0.9789, 'in_dictionary': 0.9217}  |  "Can:\nO heavens! I must lay all necessities\nas it was free a great man'"
+[main] it  4000   87.2 min  train 0.702  val 1.642  real words {'words_3plus': 335, 'in_shakespeare': 0.9612, 'in_dictionary': 0.8507}  |  'Captain:\nGood Mercutio, awhile now! How shall I be\nrare-cold for some '
+[main] it  5000  109.3 min  train 0.614  val 1.720  real words {'words_3plus': 323, 'in_shakespeare': 0.9752, 'in_dictionary': 0.9009}  |  "Can:\nI will but like friar.\n\nNurse:\nHortensio, temperary! well, let's "
+[main] done: 109.3 min of training (snapshot time excluded)

@@ -1,0 +1,16 @@
+[mem32] 10,709,825 parameters, vocab 65, block 32, device mps
+[mem32] it     0    0.0 min  train 4.115  val 4.108  real words {'words_3plus': 245, 'in_shakespeare': 0.0163, 'in_dictionary': 0.0163}  |  "C.gj.KUvLaZpN&bTv!mkRfClawhH'NgnTLhJH;VTpMHOBmipbt\nnjjb.WCs$.RzUlsqy$T"
+[mem32] it    25    0.5 min  train 2.876  val 2.886  real words {'words_3plus': 292, 'in_shakespeare': 0.1199, 'in_dictionary': 0.1884}  |  'C::jc:E:LaWaNLbTvIe RfClarhanN\n\n\nLaJHirThe berithe\n\n\nGC.WI\nLIRUUURFU$T'
+[mem32] it    50    1.0 min  train 2.448  val 2.436  real words {'words_3plus': 313, 'in_shakespeare': 0.1565, 'in_dictionary': 0.2652}  |  'Crimondelat f buvimeef lar denge ber ireshe arithe\nI he.\n\n\n\nTRLUThanou'
+[mem32] it   100    1.7 min  train 2.098  val 2.141  real words {'words_3plus': 385, 'in_shakespeare': 0.4078, 'in_dictionary': 0.5325}  |  'Ceam.\n\n\nLUDKID IUS:\nRealary, nun be you pon aright\nIs by will noth, le'
+[mem32] it   200    2.9 min  train 1.793  val 1.931  real words {'words_3plus': 369, 'in_shakespeare': 0.6558, 'in_dictionary': 0.71}  |  "Crament:\nGood but my falaw'd, gentle in pon are be\nIs by preasulisers,"
+[mem32] it   300    4.4 min  train 1.639  val 1.796  real words {'words_3plus': 368, 'in_shakespeare': 0.7826, 'in_dictionary': 0.7908}  |  "Can:\nO, make there befolar'd, gentle is power it the joyal a fulls.\n\nT"
+[mem32] it   500    7.5 min  train 1.485  val 1.667  real words {'words_3plus': 344, 'in_shakespeare': 0.8547, 'in_dictionary': 0.8517}  |  'Canscastiannot form the arms, get him;\nThou art be no buring for so le'
+[mem32] it   750   12.6 min  train 1.393  val 1.597  real words {'words_3plus': 350, 'in_shakespeare': 0.9314, 'in_dictionary': 0.8543}  |  'Cannot clampet, villainly! Henry Lord George, it through with such fle'
+[mem32] it  1000   18.1 min  train 1.341  val 1.560  real words {'words_3plus': 350, 'in_shakespeare': 0.9486, 'in_dictionary': 0.8771}  |  'Cannot claudio, villainly!\n\nCLIFFORD:\nThen I might not trust for my li'
+[mem32] it  1500   27.5 min  train 1.267  val 1.537  real words {'words_3plus': 335, 'in_shakespeare': 0.9642, 'in_dictionary': 0.8776}  |  'Cannot come to follow heart.\nNow, no more, by my true blood is almost '
+[mem32] it  2000   36.6 min  train 1.209  val 1.539  real words {'words_3plus': 347, 'in_shakespeare': 0.9769, 'in_dictionary': 0.8905}  |  'Canst thou, father, Richard!\nNone, Juliet, but the nurse of the loss o'
+[mem32] it  3000   54.8 min  train 1.096  val 1.556  real words {'words_3plus': 346, 'in_shakespeare': 0.9827, 'in_dictionary': 0.8844}  |  'Cannot change but my falsehood news?\n\nGLOUCESTER:\n\nKING RICHARD II:\nAy'
+[mem32] it  4000   72.5 min  train 1.002  val 1.602  real words {'words_3plus': 353, 'in_shakespeare': 0.9943, 'in_dictionary': 0.9065}  |  'Cannot change but my falsehood now,\nHis purpose and mine arm for so le'
+[mem32] it  5000   90.4 min  train 0.950  val 1.634  real words {'words_3plus': 337, 'in_shakespeare': 0.9941, 'in_dictionary': 0.908}  |  'Cannot be; if thou be blamed, I have in post\nTo be rejoicing for so le'
+[mem32] done: 90.4 min of training (snapshot time excluded)

@@ -1,0 +1,1539 @@
+{
+ "iter": 1000,
+ "seconds": 1086.9,
+ "chars_seen": 16384000,
+ "loss": {
+  "train": 1.3412922024726868,
+  "val": 1.56036217212677
+ },
+ "samples": {
+  "open": "CLIFFORD:\nNo, I do believe me this nature that you may could not pause\nBut our brother: the primes of our honours\nA thing his good new, if you have heard me to my son,\nBecause you shall not one to succeed and days,\nBoth all me from it, and then revenged\nWhen he would sad so far sad, and yet say thou,\nAnd slaints me and, or words are to trudk to be four them to my true.\n\nKING EDWARD IV:\nGood fair E",
+  "romeo": "Cannot claudio, villainly!\n\nCLIFFORD:\nThen I might not trust for my life,\nAnd we stay in the beast of their people.\nSo well, my lord, tears, my lord.\n\nLUCIO:\nWhy, Richard, be sworn king.\n\nPAULINA:\nSir, not that\nyou shall be helping on my father's wing,\nThat this the appoint, but thou dost send to make me stopp'd his night.\n\nLEONTES:\nSo; therefore, in their honours of me;\n'Twas he with the forper a",
+  "chat": "Where's I was come, with such a beggar half\nIn parts under my love is a will pinniced.\n\nClown:\nThen, no, my lord, sir, not make show\nFrom him old back hand: can we can much\nTo have me such as word the best of cares of him?\n\nBRUTUS:\nHe shall tell you, when you may have meet these wings were a law;\nI'll keep you to the rist mind of your remember's life,\nScends me once to our exercess, and for I\nlove",
+  "free0": "QUEEN MARGARET:\nProvost, it sleep out of my good house;\nFor you have a prisoner, as I have spent my poor talk, to know\nThe law of your souls something made your brother\nNo scentent to be sacrated and your guilty.\n\nLUCIO:\nI do beseech your honourable human\nHath been show'd up my wisdom country.\n\nLUCIO:\nIt is my hand and my success\nThat be that can be revoked and here.\n\nDUKE VINCENTIO:\nWhich a gentl",
+  "free1": "CLARENCE:\nI pray you, my lord,\nI'll with Claudio his cause.\n\nNurse:\nHe did not have made me in my husband,\nBefore thy dangerous brother world,\nBut they cannot not deliver mine.\n\nFirst Citizen:\nWhat, comes the fair souls wrink in a destroyal:\nAnd we have drawn'd up to fight our state\nWherein shall be true prisoner stranged of day:\nNor the will kings. I will be in the house\nIs perfused to do my cous",
+  "free2": "DUKE VINCENTIO:\nO, which, performition on my brother,\nAnd between on my pleasant, which straight out of isleep,\nOf never all the day as a goodly words?\n\nPARIS:\nAnd thou art of you, joy, look in thee and are my brother,\nAnd they have seen me told him: here, I dread need,\nAnd not fair deliver'd well.\n\nDUKE VINCENTIO:\nNow, a father; but yet tears\nA were young no sound as speech'd, when the wise since",
+  "free3": "KING EDWARD IV:\nAnd thou sweet counsels, which prepare you?\n\nJULIET:\nHe wars in the king and to smelts,\nShall with a company, for the world.\n\nQUEEN ELIZABETH:\nAll as you a king, sir, for that thou art all'st off the rood:\nThis swifting from the course.\n\nCORIOLANUS:\n\nCAMILLO:\nAnd may yet\nFrom him heart to make the manners; which is the desire of thy head:\nBut wherefore, that thou wast down. What ha",
+  "free4": "BUSHY:\nMy lord?\nHark, nor what thou dost protest from my mourning.\n\nDUKE VINCENTIO:\nAnd when you are consul?\n\nPRINCE EDWARD:\nShow us his gaunts, both to my mistress and wind;\nAnd I see him to dream away and away to be\nin his chamber-house; and there is the chanates?\n\nFirst Senator:\nWho sets you gone on his head to loss!\n\nPAULINA:\nThey shall be respected exparchanced,\nFor the ground hard thou known",
+  "free5": "Pursuadeness:\nWhy, thou the king is blood, and thy brother may do here?\n\nHENRY BOLINGBROKE:\nSo was a winter, and by the good tongue\nRomeo, Duke of Norfolk, and to die it\nFor drink him not your sovereign walks.\n\nDUKE VINCENTIO:\nYou must believe me, my lord, and stop at my life,\nWhat false thou hast not meet? much to your meits.\n\nKING RICHARD III:\nYea, boy, who comes not good hands my served father "
+ },
+ "words": {
+  "words_3plus": 350,
+  "in_shakespeare": 0.9486,
+  "in_dictionary": 0.8771
+ },
+ "probe": [
+  {
+   "ctx_end": "R",
+   "next": "O",
+   "p_next": 0.0587,
+   "top": [
+    [
+     "I",
+     0.1412
+    ],
+    [
+     "D",
+     0.1239
+    ],
+    [
+     "E",
+     0.0949
+    ],
+    [
+     ":",
+     0.0933
+    ],
+    [
+     "Y",
+     0.0658
+    ]
+   ]
+  },
+  {
+   "ctx_end": "O",
+   "next": "M",
+   "p_next": 0.9003,
+   "top": [
+    [
+     "M",
+     0.9003
+    ],
+    [
+     "K",
+     0.0596
+    ],
+    [
+     "S",
+     0.0112
+    ],
+    [
+     "L",
+     0.0067
+    ],
+    [
+     "T",
+     0.0066
+    ]
+   ]
+  },
+  {
+   "ctx_end": "M",
+   "next": "E",
+   "p_next": 0.9992,
+   "top": [
+    [
+     "E",
+     0.9992
+    ],
+    [
+     "I",
+     0.0004
+    ],
+    [
+     "A",
+     0.0002
+    ],
+    [
+     "N",
+     0.0
+    ],
+    [
+     "H",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "E",
+   "next": "O",
+   "p_next": 0.9997,
+   "top": [
+    [
+     "O",
+     0.9997
+    ],
+    [
+     "V",
+     0.0001
+    ],
+    [
+     "R",
+     0.0001
+    ],
+    [
+     ":",
+     0.0
+    ],
+    [
+     "N",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "O",
+   "next": ":",
+   "p_next": 0.9991,
+   "top": [
+    [
+     ":",
+     0.9991
+    ],
+    [
+     "N",
+     0.0003
+    ],
+    [
+     "\n",
+     0.0002
+    ],
+    [
+     ".",
+     0.0001
+    ],
+    [
+     "M",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": ":",
+   "next": "\n",
+   "p_next": 0.9995,
+   "top": [
+    [
+     "\n",
+     0.9995
+    ],
+    [
+     " ",
+     0.0003
+    ],
+    [
+     "'",
+     0.0
+    ],
+    [
+     "-",
+     0.0
+    ],
+    [
+     "3",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "\n",
+   "next": "B",
+   "p_next": 0.0439,
+   "top": [
+    [
+     "I",
+     0.1944
+    ],
+    [
+     "A",
+     0.1016
+    ],
+    [
+     "T",
+     0.0904
+    ],
+    [
+     "W",
+     0.0789
+    ],
+    [
+     "N",
+     0.0767
+    ]
+   ]
+  },
+  {
+   "ctx_end": "B",
+   "next": "u",
+   "p_next": 0.399,
+   "top": [
+    [
+     "u",
+     0.399
+    ],
+    [
+     "e",
+     0.2084
+    ],
+    [
+     "y",
+     0.1846
+    ],
+    [
+     "r",
+     0.0615
+    ],
+    [
+     "o",
+     0.0487
+    ]
+   ]
+  },
+  {
+   "ctx_end": "u",
+   "next": "t",
+   "p_next": 0.9837,
+   "top": [
+    [
+     "t",
+     0.9837
+    ],
+    [
+     "y",
+     0.0064
+    ],
+    [
+     "s",
+     0.0044
+    ],
+    [
+     "r",
+     0.0017
+    ],
+    [
+     "n",
+     0.001
+    ]
+   ]
+  },
+  {
+   "ctx_end": "t",
+   "next": " ",
+   "p_next": 0.8558,
+   "top": [
+    [
+     " ",
+     0.8558
+    ],
+    [
+     ",",
+     0.1347
+    ],
+    [
+     "\n",
+     0.0044
+    ],
+    [
+     "c",
+     0.0016
+    ],
+    [
+     "'",
+     0.0007
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "s",
+   "p_next": 0.1136,
+   "top": [
+    [
+     "t",
+     0.1614
+    ],
+    [
+     "w",
+     0.1241
+    ],
+    [
+     "s",
+     0.1136
+    ],
+    [
+     "I",
+     0.1125
+    ],
+    [
+     "i",
+     0.074
+    ]
+   ]
+  },
+  {
+   "ctx_end": "s",
+   "next": "o",
+   "p_next": 0.2289,
+   "top": [
+    [
+     "h",
+     0.2917
+    ],
+    [
+     "o",
+     0.2289
+    ],
+    [
+     "t",
+     0.1109
+    ],
+    [
+     "a",
+     0.1086
+    ],
+    [
+     "e",
+     0.0887
+    ]
+   ]
+  },
+  {
+   "ctx_end": "o",
+   "next": "f",
+   "p_next": 0.0144,
+   "top": [
+    [
+     " ",
+     0.4443
+    ],
+    [
+     ",",
+     0.2256
+    ],
+    [
+     "m",
+     0.1457
+    ],
+    [
+     "u",
+     0.0592
+    ],
+    [
+     "o",
+     0.0202
+    ]
+   ]
+  },
+  {
+   "ctx_end": "f",
+   "next": "t",
+   "p_next": 0.9925,
+   "top": [
+    [
+     "t",
+     0.9925
+    ],
+    [
+     "r",
+     0.0027
+    ],
+    [
+     "e",
+     0.0022
+    ],
+    [
+     "f",
+     0.0012
+    ],
+    [
+     "s",
+     0.0005
+    ]
+   ]
+  },
+  {
+   "ctx_end": "t",
+   "next": ",",
+   "p_next": 0.1731,
+   "top": [
+    [
+     " ",
+     0.2649
+    ],
+    [
+     "l",
+     0.1751
+    ],
+    [
+     ",",
+     0.1731
+    ],
+    [
+     "!",
+     0.1559
+    ],
+    [
+     "e",
+     0.0895
+    ]
+   ]
+  },
+  {
+   "ctx_end": ",",
+   "next": " ",
+   "p_next": 0.9891,
+   "top": [
+    [
+     " ",
+     0.9891
+    ],
+    [
+     "\n",
+     0.0088
+    ],
+    [
+     "-",
+     0.001
+    ],
+    [
+     "'",
+     0.0006
+    ],
+    [
+     ",",
+     0.0003
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "w",
+   "p_next": 0.0654,
+   "top": [
+    [
+     "t",
+     0.1147
+    ],
+    [
+     "m",
+     0.1061
+    ],
+    [
+     "s",
+     0.0977
+    ],
+    [
+     "a",
+     0.0835
+    ],
+    [
+     "b",
+     0.0781
+    ]
+   ]
+  },
+  {
+   "ctx_end": "w",
+   "next": "h",
+   "p_next": 0.623,
+   "top": [
+    [
+     "h",
+     0.623
+    ],
+    [
+     "e",
+     0.1425
+    ],
+    [
+     "i",
+     0.119
+    ],
+    [
+     "o",
+     0.0699
+    ],
+    [
+     "a",
+     0.0299
+    ]
+   ]
+  },
+  {
+   "ctx_end": "h",
+   "next": "a",
+   "p_next": 0.3472,
+   "top": [
+    [
+     "a",
+     0.3472
+    ],
+    [
+     "e",
+     0.2359
+    ],
+    [
+     "o",
+     0.1784
+    ],
+    [
+     "i",
+     0.1616
+    ],
+    [
+     "y",
+     0.0751
+    ]
+   ]
+  },
+  {
+   "ctx_end": "a",
+   "next": "t",
+   "p_next": 0.9991,
+   "top": [
+    [
+     "t",
+     0.9991
+    ],
+    [
+     "n",
+     0.0005
+    ],
+    [
+     "c",
+     0.0001
+    ],
+    [
+     "r",
+     0.0001
+    ],
+    [
+     "e",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "t",
+   "next": " ",
+   "p_next": 0.799,
+   "top": [
+    [
+     " ",
+     0.799
+    ],
+    [
+     "'",
+     0.0812
+    ],
+    [
+     ",",
+     0.047
+    ],
+    [
+     "?",
+     0.0451
+    ],
+    [
+     "\n",
+     0.0104
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "l",
+   "p_next": 0.0174,
+   "top": [
+    [
+     "s",
+     0.1179
+    ],
+    [
+     "t",
+     0.1075
+    ],
+    [
+     "i",
+     0.0989
+    ],
+    [
+     "w",
+     0.0873
+    ],
+    [
+     "I",
+     0.0848
+    ]
+   ]
+  },
+  {
+   "ctx_end": "l",
+   "next": "i",
+   "p_next": 0.2865,
+   "top": [
+    [
+     "i",
+     0.2865
+    ],
+    [
+     "o",
+     0.2859
+    ],
+    [
+     "a",
+     0.2437
+    ],
+    [
+     "e",
+     0.1783
+    ],
+    [
+     "u",
+     0.005
+    ]
+   ]
+  },
+  {
+   "ctx_end": "i",
+   "next": "g",
+   "p_next": 0.0418,
+   "top": [
+    [
+     "e",
+     0.3464
+    ],
+    [
+     "v",
+     0.1993
+    ],
+    [
+     "k",
+     0.1376
+    ],
+    [
+     "t",
+     0.1021
+    ],
+    [
+     "f",
+     0.0553
+    ]
+   ]
+  },
+  {
+   "ctx_end": "g",
+   "next": "h",
+   "p_next": 0.9983,
+   "top": [
+    [
+     "h",
+     0.9983
+    ],
+    [
+     "e",
+     0.0004
+    ],
+    [
+     "u",
+     0.0002
+    ],
+    [
+     "s",
+     0.0002
+    ],
+    [
+     "n",
+     0.0002
+    ]
+   ]
+  },
+  {
+   "ctx_end": "h",
+   "next": "t",
+   "p_next": 0.9838,
+   "top": [
+    [
+     "t",
+     0.9838
+    ],
+    [
+     "s",
+     0.0083
+    ],
+    [
+     " ",
+     0.0011
+    ],
+    [
+     "i",
+     0.001
+    ],
+    [
+     "n",
+     0.0009
+    ]
+   ]
+  },
+  {
+   "ctx_end": "t",
+   "next": " ",
+   "p_next": 0.4732,
+   "top": [
+    [
+     " ",
+     0.4732
+    ],
+    [
+     "?",
+     0.1824
+    ],
+    [
+     "s",
+     0.1009
+    ],
+    [
+     ",",
+     0.0595
+    ],
+    [
+     "n",
+     0.0375
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "t",
+   "p_next": 0.108,
+   "top": [
+    [
+     "i",
+     0.1552
+    ],
+    [
+     "h",
+     0.1128
+    ],
+    [
+     "t",
+     0.108
+    ],
+    [
+     "y",
+     0.0788
+    ],
+    [
+     "s",
+     0.0713
+    ]
+   ]
+  },
+  {
+   "ctx_end": "t",
+   "next": "h",
+   "p_next": 0.512,
+   "top": [
+    [
+     "h",
+     0.512
+    ],
+    [
+     "o",
+     0.421
+    ],
+    [
+     "a",
+     0.0181
+    ],
+    [
+     "i",
+     0.0167
+    ],
+    [
+     "e",
+     0.0145
+    ]
+   ]
+  },
+  {
+   "ctx_end": "h",
+   "next": "r",
+   "p_next": 0.0118,
+   "top": [
+    [
+     "e",
+     0.4228
+    ],
+    [
+     "o",
+     0.2665
+    ],
+    [
+     "a",
+     0.2068
+    ],
+    [
+     "i",
+     0.0583
+    ],
+    [
+     "y",
+     0.0204
+    ]
+   ]
+  },
+  {
+   "ctx_end": "r",
+   "next": "o",
+   "p_next": 0.5159,
+   "top": [
+    [
+     "o",
+     0.5159
+    ],
+    [
+     "e",
+     0.3482
+    ],
+    [
+     "i",
+     0.1132
+    ],
+    [
+     "a",
+     0.0142
+    ],
+    [
+     "u",
+     0.008
+    ]
+   ]
+  },
+  {
+   "ctx_end": "o",
+   "next": "u",
+   "p_next": 0.5085,
+   "top": [
+    [
+     "u",
+     0.5085
+    ],
+    [
+     "a",
+     0.1859
+    ],
+    [
+     "n",
+     0.1675
+    ],
+    [
+     "w",
+     0.0996
+    ],
+    [
+     "e",
+     0.0064
+    ]
+   ]
+  },
+  {
+   "ctx_end": "u",
+   "next": "g",
+   "p_next": 0.9872,
+   "top": [
+    [
+     "g",
+     0.9872
+    ],
+    [
+     "t",
+     0.0075
+    ],
+    [
+     "d",
+     0.0017
+    ],
+    [
+     "n",
+     0.0017
+    ],
+    [
+     "b",
+     0.0008
+    ]
+   ]
+  },
+  {
+   "ctx_end": "g",
+   "next": "h",
+   "p_next": 0.9996,
+   "top": [
+    [
+     "h",
+     0.9996
+    ],
+    [
+     "e",
+     0.0001
+    ],
+    [
+     "o",
+     0.0001
+    ],
+    [
+     "a",
+     0.0
+    ],
+    [
+     "n",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "h",
+   "next": " ",
+   "p_next": 0.8539,
+   "top": [
+    [
+     " ",
+     0.8539
+    ],
+    [
+     ",",
+     0.0393
+    ],
+    [
+     "?",
+     0.031
+    ],
+    [
+     "\n",
+     0.0148
+    ],
+    [
+     "'",
+     0.0113
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "y",
+   "p_next": 0.0812,
+   "top": [
+    [
+     "t",
+     0.1859
+    ],
+    [
+     "h",
+     0.1405
+    ],
+    [
+     "m",
+     0.0821
+    ],
+    [
+     "y",
+     0.0812
+    ],
+    [
+     "a",
+     0.0789
+    ]
+   ]
+  },
+  {
+   "ctx_end": "y",
+   "next": "o",
+   "p_next": 0.9702,
+   "top": [
+    [
+     "o",
+     0.9702
+    ],
+    [
+     "e",
+     0.0258
+    ],
+    [
+     "i",
+     0.0035
+    ],
+    [
+     "a",
+     0.0002
+    ],
+    [
+     "y",
+     0.0
+    ]
+   ]
+  },
+  {
+   "ctx_end": "o",
+   "next": "n",
+   "p_next": 0.0013,
+   "top": [
+    [
+     "u",
+     0.9977
+    ],
+    [
+     "n",
+     0.0013
+    ],
+    [
+     "k",
+     0.0005
+    ],
+    [
+     "r",
+     0.0001
+    ],
+    [
+     "e",
+     0.0001
+    ]
+   ]
+  },
+  {
+   "ctx_end": "n",
+   "next": "d",
+   "p_next": 0.8926,
+   "top": [
+    [
+     "d",
+     0.8926
+    ],
+    [
+     " ",
+     0.0328
+    ],
+    [
+     "g",
+     0.03
+    ],
+    [
+     "e",
+     0.0217
+    ],
+    [
+     ",",
+     0.0034
+    ]
+   ]
+  },
+  {
+   "ctx_end": "d",
+   "next": "e",
+   "p_next": 0.5121,
+   "top": [
+    [
+     "e",
+     0.5121
+    ],
+    [
+     " ",
+     0.299
+    ],
+    [
+     "\n",
+     0.0352
+    ],
+    [
+     ".",
+     0.0351
+    ],
+    [
+     ",",
+     0.0333
+    ]
+   ]
+  },
+  {
+   "ctx_end": "e",
+   "next": "r",
+   "p_next": 0.9984,
+   "top": [
+    [
+     "r",
+     0.9984
+    ],
+    [
+     "d",
+     0.0006
+    ],
+    [
+     "e",
+     0.0004
+    ],
+    [
+     "s",
+     0.0002
+    ],
+    [
+     "t",
+     0.0001
+    ]
+   ]
+  },
+  {
+   "ctx_end": "r",
+   "next": " ",
+   "p_next": 0.5752,
+   "top": [
+    [
+     " ",
+     0.5752
+    ],
+    [
+     "s",
+     0.0816
+    ],
+    [
+     "\n",
+     0.0601
+    ],
+    [
+     ".",
+     0.0519
+    ],
+    [
+     "?",
+     0.0503
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "w",
+   "p_next": 0.0852,
+   "top": [
+    [
+     "s",
+     0.0973
+    ],
+    [
+     "t",
+     0.0957
+    ],
+    [
+     "w",
+     0.0852
+    ],
+    [
+     "m",
+     0.0788
+    ],
+    [
+     "h",
+     0.0743
+    ]
+   ]
+  },
+  {
+   "ctx_end": "w",
+   "next": "i",
+   "p_next": 0.458,
+   "top": [
+    [
+     "i",
+     0.458
+    ],
+    [
+     "a",
+     0.1724
+    ],
+    [
+     "o",
+     0.1224
+    ],
+    [
+     "h",
+     0.1123
+    ],
+    [
+     "e",
+     0.109
+    ]
+   ]
+  },
+  {
+   "ctx_end": "i",
+   "next": "n",
+   "p_next": 0.013,
+   "top": [
+    [
+     "t",
+     0.8453
+    ],
+    [
+     "l",
+     0.1149
+    ],
+    [
+     "s",
+     0.0174
+    ],
+    [
+     "n",
+     0.013
+    ],
+    [
+     "d",
+     0.0034
+    ]
+   ]
+  },
+  {
+   "ctx_end": "n",
+   "next": "d",
+   "p_next": 0.59,
+   "top": [
+    [
+     "d",
+     0.59
+    ],
+    [
+     "t",
+     0.0881
+    ],
+    [
+     "g",
+     0.0854
+    ],
+    [
+     "e",
+     0.0801
+    ],
+    [
+     " ",
+     0.0494
+    ]
+   ]
+  },
+  {
+   "ctx_end": "d",
+   "next": "o",
+   "p_next": 0.1785,
+   "top": [
+    [
+     "s",
+     0.2001
+    ],
+    [
+     "o",
+     0.1785
+    ],
+    [
+     "r",
+     0.1608
+    ],
+    [
+     "e",
+     0.136
+    ],
+    [
+     " ",
+     0.0888
+    ]
+   ]
+  },
+  {
+   "ctx_end": "o",
+   "next": "w",
+   "p_next": 0.9861,
+   "top": [
+    [
+     "w",
+     0.9861
+    ],
+    [
+     "m",
+     0.0106
+    ],
+    [
+     " ",
+     0.0007
+    ],
+    [
+     "u",
+     0.0004
+    ],
+    [
+     "n",
+     0.0003
+    ]
+   ]
+  },
+  {
+   "ctx_end": "w",
+   "next": " ",
+   "p_next": 0.0772,
+   "top": [
+    [
+     "s",
+     0.6351
+    ],
+    [
+     "'",
+     0.0805
+    ],
+    [
+     " ",
+     0.0772
+    ],
+    [
+     ",",
+     0.0554
+    ],
+    [
+     ".",
+     0.0448
+    ]
+   ]
+  },
+  {
+   "ctx_end": " ",
+   "next": "b",
+   "p_next": 0.0335,
+   "top": [
+    [
+     "t",
+     0.1554
+    ],
+    [
+     "m",
+     0.1393
+    ],
+    [
+     "o",
+     0.1067
+    ],
+    [
+     "i",
+     0.0905
+    ],
+    [
+     "a",
+     0.0871
+    ]
+   ]
+  },
+  {
+   "ctx_end": "b",
+   "next": "r",
+   "p_next": 0.0838,
+   "top": [
+    [
+     "e",
+     0.3022
+    ],
+    [
+     "y",
+     0.2366
+    ],
+    [
+     "u",
+     0.1988
+    ],
+    [
+     "o",
+     0.1031
+    ],
+    [
+     "r",
+     0.0838
+    ]
+   ]
+  },
+  {
+   "ctx_end": "r",
+   "next": "e",
+   "p_next": 0.2353,
+   "top": [
+    [
+     "o",
+     0.4828
+    ],
+    [
+     "e",
+     0.2353
+    ],
+    [
+     "i",
+     0.1946
+    ],
+    [
+     "a",
+     0.0809
+    ],
+    [
+     "u",
+     0.0048
+    ]
+   ]
+  },
+  {
+   "ctx_end": "e",
+   "next": "a",
+   "p_next": 0.8574,
+   "top": [
+    [
+     "a",
+     0.8574
+    ],
+    [
+     "e",
+     0.0967
+    ],
+    [
+     "w",
+     0.0195
+    ],
+    [
+     "n",
+     0.0057
+    ],
+    [
+     "t",
+     0.0053
+    ]
+   ]
+  },
+  {
+   "ctx_end": "a",
+   "next": "k",
+   "p_next": 0.1605,
+   "top": [
+    [
+     "t",
+     0.7334
+    ],
+    [
+     "k",
+     0.1605
+    ],
+    [
+     "d",
+     0.0517
+    ],
+    [
+     "s",
+     0.0339
+    ],
+    [
+     "c",
+     0.0094
+    ]
+   ]
+  },
+  {
+   "ctx_end": "k",
+   "next": "s",
+   "p_next": 0.1977,
+   "top": [
+    [
+     " ",
+     0.4226
+    ],
+    [
+     "s",
+     0.1977
+    ],
+    [
+     ".",
+     0.1007
+    ],
+    [
+     ",",
+     0.0755
+    ],
+    [
+     "\n",
+     0.052
+    ]
+   ]
+  },
+  {
+   "ctx_end": "s",
+   "next": "?",
+   "p_next": 0.026,
+   "top": [
+    [
+     " ",
+     0.3352
+    ],
+    [
+     ".",
+     0.1932
+    ],
+    [
+     ",",
+     0.1555
+    ],
+    [
+     "\n",
+     0.1421
+    ],
+    [
+     ":",
+     0.0667
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+[main_s3] 10,795,841 parameters, vocab 65, block 256, device mps
+[main_s3] it     0    0.0 min  train 4.271  val 4.272  real words {'words_3plus': 237, 'in_shakespeare': 0.0084, 'in_dictionary': 0.0169}  |  'Crgj.KUvL3ZpfDbfv!mbRfblarhd3NgnqLFJH;rTpMHbB3igbt\nnRjb.rU;ggRzUKRqy$T'
+[main_s3] it    25    0.6 min  train 2.803  val 2.833  real words {'words_3plus': 265, 'in_shakespeare': 0.0792, 'in_dictionary': 0.1434}  |  'CMgj.KK:LGWKNDbTv!mkRfCParhA3NInTL!JH;TThMHIBEIJAR\nF!jC.WC!L&RzUKCFW$T'
+[main_s3] it    50    1.1 min  train 2.529  val 2.539  real words {'words_3plus': 261, 'in_shakespeare': 0.1149, 'in_dictionary': 0.2261}  |  'C:MENKE:LGUKIDbuvIUS:SCIaryUSNIn LEJHATThon BEIUAR\nI:\nCEWIULIRUUKCFUNT'
+[main_s3] it   100    2.2 min  train 2.448  val 2.462  real words {'words_3plus': 278, 'in_shakespeare': 0.1403, 'in_dictionary': 0.2734}  |  'COUSOOUOLOUKNDUT:IUS:SClaUSANNIn LAJCATTOMUSCEIUS:\nIOUCEWICO RCUKCF AT'
+[main_s3] it   200    4.5 min  train 2.183  val 2.235  real words {'words_3plus': 326, 'in_shakespeare': 0.1595, 'in_dictionary': 0.2761}  |  "CAMANEESLAUDIDUTINIUSICIUS:A'NIUS:\nJULIUS:\nI mit ther:\nThas thaUS:\nWhe"
+[main_s3] it   300    6.7 min  train 1.859  val 1.998  real words {'words_3plus': 363, 'in_shakespeare': 0.5675, 'in_dictionary': 0.6749}  |  'Crament:\nGodd Mursearfular:\nNorn Lord;\nThou seepot\nISABELLANGREUMENIUS'
+[main_s3] it   500   11.2 min  train 1.549  val 1.738  real words {'words_3plus': 358, 'in_shakespeare': 0.743, 'in_dictionary': 0.7179}  |  'Cansconver,\nNurse!\n\nROMEO:\nAy, now, you have mighter: burise an is you'
+[main_s3] it   750   16.8 min  train 1.382  val 1.599  real words {'words_3plus': 355, 'in_shakespeare': 0.8761, 'in_dictionary': 0.8225}  |  'Canst this, for I must lawy.\nNurse, you shall I would by the father of'
+[main_s3] it  1000   22.5 min  train 1.284  val 1.540  real words {'words_3plus': 352, 'in_shakespeare': 0.9347, 'in_dictionary': 0.8693}  |  'Canst this is but make a while news three no might\nno burns of the pow'
+[main_s3] it  1500   32.8 min  train 1.155  val 1.487  real words {'words_3plus': 342, 'in_shakespeare': 0.962, 'in_dictionary': 0.8713}  |  'Canst thou art fore too are angels to report it.\n\nFirst Gentleman:\nWhy'
+[main_s3] it  2000   43.0 min  train 1.057  val 1.472  real words {'words_3plus': 339, 'in_shakespeare': 0.9469, 'in_dictionary': 0.8761}  |  "Clown:\nNo matter: marry, she's not a brace of it.\n\nFROTH:\nA gentleman,"
+[main_s3] it  3000   63.3 min  train 0.873  val 1.532  real words {'words_3plus': 345, 'in_shakespeare': 0.9594, 'in_dictionary': 0.8667}  |  'Canst thou art so materly, and not suffer than the\nduke.\n\nMERCUTIO:\nNa'
+[main_s3] it  4000   85.8 min  train 0.714  val 1.624  real words {'words_3plus': 340, 'in_shakespeare': 0.9618, 'in_dictionary': 0.8706}  |  'Claudio, sir, but my fancy done. Let me see your threes.\n\nMERCUTIO:\nNa'
+[main_s3] it  5000  109.1 min  train 0.633  val 1.692  real words {'words_3plus': 340, 'in_shakespeare': 0.9618, 'in_dictionary': 0.8912}  |  "Cay, sir, I do fear thee; he's not by any harm.\n\nMERCUTIO:\nNay, if the"
+[main_s3] done: 109.1 min of training (snapshot time excluded)

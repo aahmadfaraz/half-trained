@@ -1,0 +1,16 @@
+[mem8_s3] 10,700,609 parameters, vocab 65, block 8, device mps
+[mem8_s3] it     0    0.0 min  train 4.259  val 4.259  real words {'words_3plus': 236, 'in_shakespeare': 0.0127, 'in_dictionary': 0.0212}  |  'C.gj.KUvLaZaNDbuv!mkRfblawhd3NGnZLFJH;rT;M;IB3iU?t\nrjGb.rjba&RzUKsqy$T'
+[mem8_s3] it    25    0.6 min  train 2.796  val 2.797  real words {'words_3plus': 318, 'in_shakespeare': 0.0597, 'in_dictionary': 0.1415}  |  'C:\nj\nOE:LaWaN\nblv!e efelarhden n baJ ;resd baritet\nr\nhe.r me fn lsorou'
+[mem8_s3] it    50    1.1 min  train 2.404  val 2.409  real words {'words_3plus': 372, 'in_shakespeare': 0.1935, 'in_dictionary': 0.3495}  |  'Cand thelathe buvimeef largand nos Jy ris no mit ther by wie fo lomel,'
+[mem8_s3] it   100    2.2 min  train 2.148  val 2.170  real words {'words_3plus': 402, 'in_shakespeare': 0.5423, 'in_dictionary': 0.6517}  |  'Cram them the but mate larh will be you pon simpet\nIs bur se full my s'
+[mem8_s3] it   200    4.4 min  train 1.883  val 2.000  real words {'words_3plus': 374, 'in_shakespeare': 0.6952, 'in_dictionary': 0.7406}  |  "Caniced make to vile folared's noble is pon armant\nTo burt a fails, le"
+[mem8_s3] it   300    6.4 min  train 1.783  val 1.926  real words {'words_3plus': 373, 'in_shakespeare': 0.7802, 'in_dictionary': 0.7641}  |  'Capillend the burieved\nIn have noble in pon armant\nTo by pressends, le'
+[mem8_s3] it   500   10.2 min  train 1.688  val 1.845  real words {'words_3plus': 351, 'in_shakespeare': 0.8519, 'in_dictionary': 0.7835}  |  'Cannot will be so!\n\nRICHARD III:\nThe prison alive.\n\nSAMPSON:\nSuch my s'
+[mem8_s3] it   750   15.1 min  train 1.636  val 1.800  real words {'words_3plus': 359, 'in_shakespeare': 0.9192, 'in_dictionary': 0.8914}  |  'Canst the faults: my falsehold not this power it them by the father le'
+[mem8_s3] it  1000   19.7 min  train 1.607  val 1.785  real words {'words_3plus': 357, 'in_shakespeare': 0.9132, 'in_dictionary': 0.8459}  |  'Canst the faults: marry are wounds this possess at\nthis rise and so le'
+[mem8_s3] it  1500   28.5 min  train 1.571  val 1.756  real words {'words_3plus': 356, 'in_shakespeare': 0.9607, 'in_dictionary': 0.8624}  |  'Cannot clamation: make a while not this power it throne.\n\nBUCKINGHAM:\n'
+[mem8_s3] it  2000   37.4 min  train 1.546  val 1.751  real words {'words_3plus': 357, 'in_shakespeare': 0.9636, 'in_dictionary': 0.8908}  |  'Calm them fair solemned against the prince I might\nIs burning soldiers'
+[mem8_s3] it  3000   56.2 min  train 1.509  val 1.740  real words {'words_3plus': 350, 'in_shakespeare': 0.98, 'in_dictionary': 0.9229}  |  'Canst thou, for I may bear a man be so bed;\nBut we make rest for sorro'
+[mem8_s3] it  4000   75.6 min  train 1.482  val 1.739  real words {'words_3plus': 354, 'in_shakespeare': 0.9746, 'in_dictionary': 0.8927}  |  'Canst thou, for I must lay aside the crown;\nBut we now, resign to my s'
+[mem8_s3] it  5000   94.1 min  train 1.468  val 1.744  real words {'words_3plus': 355, 'in_shakespeare': 0.9803, 'in_dictionary': 0.893}  |  'Canst thou, for I must lay aside the crown;\nBut we may not a falls, le'
+[mem8_s3] done: 94.1 min of training (snapshot time excluded)

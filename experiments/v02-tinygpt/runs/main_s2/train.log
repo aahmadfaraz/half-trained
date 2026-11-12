@@ -1,0 +1,16 @@
+[main_s2] 10,795,841 parameters, vocab 65, block 256, device mps
+[main_s2] it     0    0.0 min  train 4.162  val 4.166  real words {'words_3plus': 257, 'in_shakespeare': 0.0078, 'in_dictionary': 0.0272}  |  'C.gj.nUvLaZpNDbuv!mk:fClarhd3NunuLnJH;VTpM;yB3ipNt\nn\njb.WC;u&RzUlsqy$T'
+[main_s2] it    25    0.6 min  train 2.808  val 2.832  real words {'words_3plus': 270, 'in_shakespeare': 0.1185, 'in_dictionary': 0.2222}  |  'C.Gj.KU:LGWTNDbTv!Uk:fWNarhH3NGnTLFJH;TThMHIB:IUAW\nI\nGC.WHAgTRzUARqW$T'
+[main_s2] it    50    1.1 min  train 2.526  val 2.530  real words {'words_3plus': 247, 'in_shakespeare': 0.0607, 'in_dictionary': 0.1619}  |  'CENGO:UOLGUKNLQT:IUS:IClar:ANNIRELEJHETThon:BEIUNR\nI: by IULERLUKRFUNT'
+[main_s2] it   100    2.1 min  train 2.442  val 2.469  real words {'words_3plus': 297, 'in_shakespeare': 0.1347, 'in_dictionary': 0.2559}  |  'CrimOOUSLat fLI vimURICIarSANNIn LAS:ArThon s:I we\nIOUCES:\nAn n l my s'
+[main_s2] it   200    3.8 min  train 2.194  val 2.254  real words {'words_3plus': 334, 'in_shakespeare': 0.2216, 'in_dictionary': 0.3623}  |  'CSASSOUSLAUSTEST:\nWhef I whatNIn ber ires no mit ther by wit foris. My'
+[main_s2] it   300    5.5 min  train 1.858  val 1.995  real words {'words_3plus': 378, 'in_shakespeare': 0.4974, 'in_dictionary': 0.6085}  |  'Crimenter Where vime:\nWaarh why live is pon Beiturm a by pour not my s'
+[main_s2] it   500    9.0 min  train 1.546  val 1.746  real words {'words_3plus': 349, 'in_shakespeare': 0.7536, 'in_dictionary': 0.7393}  |  'CaMiLo, make thou may black will be you shall it the joy and fairst ou'
+[main_s2] it   750   13.5 min  train 1.377  val 1.601  real words {'words_3plus': 350, 'in_shakespeare': 0.8857, 'in_dictionary': 0.8429}  |  'Capilatelation, villeful what your herried; and your gracious poisons,'
+[main_s2] it  1000   17.9 min  train 1.277  val 1.536  real words {'words_3plus': 328, 'in_shakespeare': 0.8811, 'in_dictionary': 0.8384}  |  'Cannot come.\n\nMENENIUS:\nYou wounded your heart.\n\nCORIOLANUS:\nRemember,'
+[main_s2] it  1500   26.8 min  train 1.147  val 1.470  real words {'words_3plus': 333, 'in_shakespeare': 0.9219, 'in_dictionary': 0.8198}  |  'Cannot confess to make a while: I have been a man man by the faces, as'
+[main_s2] it  2000   36.0 min  train 1.048  val 1.480  real words {'words_3plus': 347, 'in_shakespeare': 0.9481, 'in_dictionary': 0.8732}  |  'Cannot wear you with falsehood friend; is no more profit to the propor'
+[main_s2] it  3000   54.4 min  train 0.861  val 1.539  real words {'words_3plus': 350, 'in_shakespeare': 0.96, 'in_dictionary': 0.8829}  |  'Constable:\nThis is a falcon any of this poor mine.\n\nMERCUTIO:\nNo, my g'
+[main_s2] it  4000   72.9 min  train 0.703  val 1.632  real words {'words_3plus': 331, 'in_shakespeare': 0.9668, 'in_dictionary': 0.8973}  |  'Conscient Wednesdable: a gentleman of mine own\nconstable. He hath made'
+[main_s2] it  5000   91.4 min  train 0.617  val 1.708  real words {'words_3plus': 337, 'in_shakespeare': 0.9733, 'in_dictionary': 0.9021}  |  'Capitol, an you are, farewell.\n\nTYBALT:\nWhy, then, no matter.\n\nROMEO:\n'
+[main_s2] done: 91.4 min of training (snapshot time excluded)

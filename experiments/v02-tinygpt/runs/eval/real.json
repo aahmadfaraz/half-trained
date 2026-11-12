@@ -1,0 +1,20 @@
+{
+ "name": "real_val_text",
+ "structure": {
+  "turns": 254,
+  "turns_per_1000_chars": 7.56,
+  "valid_speaker_share": 0.9921,
+  "same_speaker_twice_share": 0.0,
+  "new_speaker_share_after_first": 0.4375,
+  "handovers": 208,
+  "handover_pairs_that_talk_share": 0.9904,
+  "line_len_mean": 36.4,
+  "lines_over_80_share": 0.0,
+  "words_3plus": 4841,
+  "real_word_share": 0.9273,
+  "copied_30char_share": 0.0009,
+  "chars": 33600
+ },
+ "n_samples": 48,
+ "n_chars": 700
+}

@@ -1,0 +1,16 @@
+[mem32_s2] 10,709,825 parameters, vocab 65, block 32, device mps
+[mem32_s2] it     0    0.0 min  train 4.255  val 4.256  real words {'words_3plus': 252, 'in_shakespeare': 0.0079, 'in_dictionary': 0.0079}  |  'C.gj.KUvLGZpGDb&v!mk:fClarhH3NgnqL!JH;r!pMHqBmipbt\nn!jb.WC!$cRzUqsqy$T'
+[mem32_s2] it    25    0.3 min  train 2.890  val 2.895  real words {'words_3plus': 271, 'in_shakespeare': 0.0996, 'in_dictionary': 0.1734}  |  'C::jO:E:LGZTNDbTvImIRfClarhe N\nn L\nJHire M:\nBeIath\nI\nGC.WI\nLTRzUTRFSAT'
+[mem32_s2] it    50    0.6 min  train 2.449  val 2.442  real words {'words_3plus': 311, 'in_shakespeare': 0.1961, 'in_dictionary': 0.299}  |  'Crimondelat fibuvim RICanghanN n ber ires n arit ther by wig fo lsor s'
+[mem32_s2] it   100    1.2 min  train 2.106  val 2.139  real words {'words_3plus': 372, 'in_shakespeare': 0.4086, 'in_dictionary': 0.5269}  |  'CeAmy thearturbuvime:\nCand den not JuRIT:\nHis it ther by with shis you'
+[mem32_s2] it   200    2.7 min  train 1.788  val 1.915  real words {'words_3plus': 367, 'in_shakespeare': 0.6894, 'in_dictionary': 0.7139}  |  'Criment:\nGod, but my falary, non be your dear it them by with not my s'
+[mem32_s2] it   300    4.3 min  train 1.639  val 1.803  real words {'words_3plus': 372, 'in_shakespeare': 0.828, 'in_dictionary': 0.7984}  |  'CaMIO:\nThat you villeful what I have in ponce it them by with not my g'
+[mem32_s2] it   500    7.6 min  train 1.486  val 1.663  real words {'words_3plus': 362, 'in_shakespeare': 0.8425, 'in_dictionary': 0.8066}  |  'Canst the fault of heart;\nSay your Juliet, as I well be.\n\nBARNARTIUS:\n'
+[mem32_s2] it   750   11.8 min  train 1.396  val 1.597  real words {'words_3plus': 339, 'in_shakespeare': 0.9381, 'in_dictionary': 0.882}  |  'Canst the father:\nI thank her good John powers.\n\nKING RICHARD II:\nFor '
+[mem32_s2] it  1000   16.3 min  train 1.339  val 1.568  real words {'words_3plus': 357, 'in_shakespeare': 0.9468, 'in_dictionary': 0.8908}  |  'Can come, fair love, follow with me to bed;\nBut we not think for some '
+[mem32_s2] it  1500   24.8 min  train 1.268  val 1.533  real words {'words_3plus': 345, 'in_shakespeare': 0.9623, 'in_dictionary': 0.8754}  |  'Canst thou, friends, follow with an executioner be\nno better from my s'
+[mem32_s2] it  2000   34.7 min  train 1.207  val 1.525  real words {'words_3plus': 346, 'in_shakespeare': 0.9653, 'in_dictionary': 0.8699}  |  "Canst thou not speak: banish'd now, sir.\n\nFirst Servant:\nHow far so lo"
+[mem32_s2] it  3000   52.1 min  train 1.098  val 1.554  real words {'words_3plus': 358, 'in_shakespeare': 0.9804, 'in_dictionary': 0.9162}  |  'Canst thou not speak fall his gentleman.\n\nHENRY BOLINGBROKE:\nReply you'
+[mem32_s2] it  4000   69.8 min  train 1.006  val 1.599  real words {'words_3plus': 341, 'in_shakespeare': 0.9824, 'in_dictionary': 0.8915}  |  'Canst thou not speak fall, dear queen;\nThou art a man, art a fool, a g'
+[mem32_s2] it  5000   88.2 min  train 0.954  val 1.631  real words {'words_3plus': 348, 'in_shakespeare': 0.9856, 'in_dictionary': 0.9023}  |  'Canst thou tell me? the army of the queen,\nTheir true surpluck all. No'
+[mem32_s2] done: 88.2 min of training (snapshot time excluded)

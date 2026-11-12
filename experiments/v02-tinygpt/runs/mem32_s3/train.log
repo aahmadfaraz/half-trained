@@ -1,0 +1,16 @@
+[mem32_s3] 10,709,825 parameters, vocab 65, block 32, device mps
+[mem32_s3] it     0    0.0 min  train 4.280  val 4.271  real words {'words_3plus': 256, 'in_shakespeare': 0.0078, 'in_dictionary': 0.0078}  |  'CrgjcKUvL$ZpNDbTv!mkRfClarhH3NgnZL!JH;rTpM;jB3ip!!\nnjjr.rH!e&RzUKsqy$T'
+[mem32_s3] it    25    0.5 min  train 2.857  val 2.872  real words {'words_3plus': 300, 'in_shakespeare': 0.12, 'in_dictionary': 0.1967}  |  "CMMjN:U:LGUpNDbTv!mhefClarhe'NIn beJ ;re he Beithe\nnd b.ris the lsorou"
+[mem32_s3] it    50    0.9 min  train 2.443  val 2.438  real words {'words_3plus': 309, 'in_shakespeare': 0.1909, 'in_dictionary': 0.2816}  |  'CMMGOOUOLGUTNDUT:\nUS:\nCaarhanNIn LoJ irest I mit ther by wig fu lsorou'
+[mem32_s3] it   100    1.7 min  train 2.110  val 2.139  real words {'words_3plus': 374, 'in_shakespeare': 0.3984, 'in_dictionary': 0.5348}  |  "Cepso delave thoveme:\nWanred'nge cor is pon arites\nIs by with shis you"
+[mem32_s3] it   200    3.4 min  train 1.790  val 1.924  real words {'words_3plus': 351, 'in_shakespeare': 0.6382, 'in_dictionary': 0.661}  |  'Senst the fault vile:\nWarwhat I like in pon arituter: by with not my s'
+[mem32_s3] it   300    5.0 min  train 1.641  val 1.810  real words {'words_3plus': 380, 'in_shakespeare': 0.8184, 'in_dictionary': 0.8158}  |  "Cannot will fitst my folar'd, I live is post mine.\n\nKING HAM:\nWhich le"
+[mem32_s3] it   500    8.4 min  train 1.490  val 1.673  real words {'words_3plus': 364, 'in_shakespeare': 0.8819, 'in_dictionary': 0.8462}  |  'Canst the fault of heavens deny.\n\nFRIAR LAURENCE:\n\nFirst Citizen:\nFor '
+[mem32_s3] it   750   12.6 min  train 1.396  val 1.601  real words {'words_3plus': 356, 'in_shakespeare': 0.9213, 'in_dictionary': 0.8989}  |  'Canst the fault of heaven!\n\nCLIFFORD:\nThe name are no burish an is sou'
+[mem32_s3] it  1000   17.1 min  train 1.340  val 1.560  real words {'words_3plus': 358, 'in_shakespeare': 0.9441, 'in_dictionary': 0.8911}  |  "Cannot claim to be her law:\n'Nay, and I shall in them by the fails.\n\nT"
+[mem32_s3] it  1500   25.4 min  train 1.267  val 1.533  real words {'words_3plus': 350, 'in_shakespeare': 0.9686, 'in_dictionary': 0.8914}  |  'Canst thou art a bearful while now!\nHow! what is the joy is the lament'
+[mem32_s3] it  2000   33.7 min  train 1.208  val 1.531  real words {'words_3plus': 352, 'in_shakespeare': 0.9688, 'in_dictionary': 0.9062}  |  'Canst thou, for I must lay awhile.\nJustice came to the news is but so,'
+[mem32_s3] it  3000  180.9 min  train 1.097  val 1.550  real words {'words_3plus': 348, 'in_shakespeare': 0.977, 'in_dictionary': 0.9195}  |  "Can come again with Rome, having both ripen'd in the joy\nWith noisome,"
+[mem32_s3] it  4000  194.8 min  train 1.002  val 1.598  real words {'words_3plus': 357, 'in_shakespeare': 0.9888, 'in_dictionary': 0.8964}  |  'Can cut me in; for I follow you.\n\nFirst Citizen:\nWell, you are almost '
+[mem32_s3] it  5000  209.4 min  train 0.950  val 1.631  real words {'words_3plus': 344, 'in_shakespeare': 0.9855, 'in_dictionary': 0.8837}  |  "Canst thou not speak: but he'll take it as you.\n\nCOMINIUS:\nLook you so"
+[mem32_s3] done: 209.4 min of training (snapshot time excluded)

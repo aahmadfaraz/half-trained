@@ -1,0 +1,16 @@
+[mem8] 10,700,609 parameters, vocab 65, block 8, device mps
+[mem8] it     0    0.0 min  train 4.257  val 4.260  real words {'words_3plus': 255, 'in_shakespeare': 0.0039, 'in_dictionary': 0.0157}  |  'C.gj.KUvLGZpGDbTv!mkRfClarhH3NGnqLFJH;V!pM;cB3ipbt\nnjGb.WkV$ RzUlsqy$T'
+[mem8] it    25    0.6 min  train 2.810  val 2.805  real words {'words_3plus': 323, 'in_shakespeare': 0.0929, 'in_dictionary': 0.195}  |  'CM\njOOE\nLaZKNDbT:!\nI:f\naarhdeN n baJy resd barit ther b.e se Rn lsorou'
+[mem8] it    50    1.0 min  train 2.407  val 2.409  real words {'words_3plus': 373, 'in_shakespeare': 0.2359, 'in_dictionary': 0.3941}  |  "Cand thelat fibuvim thelarge'nge ber ires nor it ther by wig fo lomy s"
+[mem8] it   100    1.8 min  train 2.145  val 2.171  real words {'words_3plus': 364, 'in_shakespeare': 0.4231, 'in_dictionary': 0.5412}  |  'Cand themat fublove the argay ge bet is pon arice.\n\n\nGo.\n\nBut buts, le'
+[mem8] it   200    3.5 min  train 1.882  val 1.991  real words {'words_3plus': 379, 'in_shakespeare': 0.715, 'in_dictionary': 0.752}  |  "Crame the faurthere efolared's not Jurried their them by with not my s"
+[mem8] it   300    5.2 min  train 1.785  val 1.930  real words {'words_3plus': 370, 'in_shakespeare': 0.7919, 'in_dictionary': 0.7865}  |  'Cause the faurble!\n\nRICHARD IIII:\nWhy, is not it them by the father le'
+[mem8] it   500    8.7 min  train 1.690  val 1.844  real words {'words_3plus': 363, 'in_shakespeare': 0.8733, 'in_dictionary': 0.8705}  |  'Canst the faults in the are will be some dear it them by the father le'
+[mem8] it   750   13.0 min  train 1.637  val 1.804  real words {'words_3plus': 357, 'in_shakespeare': 0.9328, 'in_dictionary': 0.8768}  |  'Canst the faults, my falaced none are reports it them by the father le'
+[mem8] it  1000   17.3 min  train 1.606  val 1.777  real words {'words_3plus': 354, 'in_shakespeare': 0.9435, 'in_dictionary': 0.8955}  |  'Canst the fault villain are younger Harry, by my throw you are blood s'
+[mem8] it  1500   25.6 min  train 1.569  val 1.749  real words {'words_3plus': 350, 'in_shakespeare': 0.94, 'in_dictionary': 0.8743}  |  'Canst the fault of heavens deny.\n\nFRIAR LAURENCE:\n\nFROTH:\nBut not my s'
+[mem8] it  2000   33.9 min  train 1.544  val 1.739  real words {'words_3plus': 368, 'in_shakespeare': 0.9647, 'in_dictionary': 0.8886}  |  'Canst this purbling effection for thy rest; and we\nFor you are blood s'
+[mem8] it  3000   50.4 min  train 1.508  val 1.736  real words {'words_3plus': 345, 'in_shakespeare': 0.9826, 'in_dictionary': 0.913}  |  "Canst thou, for I must lay and noble lords, and be\nrejoy'd and his for"
+[mem8] it  4000   67.2 min  train 1.481  val 1.735  real words {'words_3plus': 360, 'in_shakespeare': 0.9861, 'in_dictionary': 0.9306}  |  'Calmly, make the bearful where now, sir.\n\nHENRY BOLINGBROKE:\nRelease y'
+[mem8] it  5000   88.0 min  train 1.466  val 1.740  real words {'words_3plus': 348, 'in_shakespeare': 0.9799, 'in_dictionary': 0.9195}  |  'Calmly, make the bearful where now, sir.\n\nHENRY BOLINGBROKE:\nSuch as s'
+[mem8] done: 88.0 min of training (snapshot time excluded)
