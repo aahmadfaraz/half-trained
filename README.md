@@ -11,7 +11,7 @@ environment, training and evaluation scripts, settings, seeds and results.
 | # | Video | Folder |
 |---|---|---|
 | 01 | [AI Learns to Land a Rocket. Then I Break One Engine.](https://youtu.be/_D4dPklPbP8) | `experiments/v01-rocket` |
-| 02 | I Trained a Tiny ChatGPT on Shakespeare to See What's Inside | `experiments/v02-tinygpt` |
+| 02 | [I Trained a Tiny ChatGPT on Shakespeare to See What's Inside](https://youtu.be/gWbRwQvJD48) | `experiments/v02-tinygpt` |
 
 ## Setup
 Python 3.12:

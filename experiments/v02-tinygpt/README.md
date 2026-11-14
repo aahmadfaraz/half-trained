@@ -4,7 +4,7 @@ A small GPT, written from scratch, reads Tiny Shakespeare one character at a tim
 We watch it learn, ask it "What is the meaning of life?", then cut its memory (the context window) from 256 letters to 32, 8 and 1.
 Every number in the video comes from the files in this folder.
 
-**Watch the video:** link coming when it's published (Sun 15 Nov 2026)
+**Watch the video:** https://youtu.be/gWbRwQvJD48
 
 ## Results
 
