@@ -128,3 +128,6 @@ moves and reporting are the same as for everyone else.
    nine options counts as invalid and it stands still.
 10. **Requests that are not results:** one Decisions API request and one throwaway game (seed 70001, wall room) for
     Gemini Decision 1; one request to Gemini 3.5 Flash-Lite.
+11. **The local model's games are paused from 22:19 on 15 Nov** to free memory for other work on this Mac. Its registered
+    5-game sets were already complete in all three matches; it had played 20, 18 and 5 games (wall runner, open chaser,
+    open runner). The extended set continues from the saved decision when the model server is started again.
