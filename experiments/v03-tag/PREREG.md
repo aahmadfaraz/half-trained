@@ -107,3 +107,5 @@ Test games and single test requests were used to build the harness and are not r
    to Nemotron hung for 10 minutes without an answer. No answer that arrives is ever dropped.
 7. **Two more requests that are not results:** one Groq request to `qwen/qwen3.8-27b` to read a rate-limit message,
    and one local test game (`qwen3.5:4b`, seed 70000, open room) to check change 6.
+8. **The local model's server was restarted at 20:51** with its prompt cache off: it had grown to 12 GB of memory.
+   The game in progress (`qwen3.5:4b`, open chaser, seed 90003) continued from its last saved decision, at 11.5 s.
