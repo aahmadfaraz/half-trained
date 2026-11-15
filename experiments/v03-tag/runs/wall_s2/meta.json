@@ -1,0 +1,16 @@
+{
+ "seed": 2,
+ "layout": "wall",
+ "rounds": 80,
+ "steps_per_role_per_round": 400000,
+ "n_envs": 32,
+ "past_share": 0.25,
+ "init": "runs/open_s2",
+ "t_max_steps": 300,
+ "python": "3.12.14",
+ "torch": "2.15.0",
+ "sb3": "2.9.2",
+ "machine": "arm64",
+ "started": "2026-11-11 21:49:47",
+ "finished": "2026-11-11 23:25:36"
+}

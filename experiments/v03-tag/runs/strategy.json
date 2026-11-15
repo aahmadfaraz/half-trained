@@ -1,0 +1,56 @@
+{
+ "runs/open_s1": {
+  "layout": "open",
+  "games": 500,
+  "catch_rate": 1.0,
+  "mean_survival_s": 5.38,
+  "runner_near_outer_edge": 0.753
+ },
+ "runs/open_s2": {
+  "layout": "open",
+  "games": 500,
+  "catch_rate": 1.0,
+  "mean_survival_s": 5.8,
+  "runner_near_outer_edge": 0.773
+ },
+ "runs/open_s3": {
+  "layout": "open",
+  "games": 500,
+  "catch_rate": 1.0,
+  "mean_survival_s": 5.4,
+  "runner_near_outer_edge": 0.743
+ },
+ "runs/wall_s1": {
+  "layout": "wall",
+  "games": 500,
+  "catch_rate": 0.034,
+  "mean_survival_s": 29.29,
+  "runner_near_outer_edge": 0.006,
+  "wall_blocks_line_of_sight": 0.592,
+  "runner_within_1.5_of_wall": 0.879,
+  "runner_loops_around_wall_per_game": 3.57,
+  "games_with_2plus_loops": 0.95
+ },
+ "runs/wall_s2": {
+  "layout": "wall",
+  "games": 500,
+  "catch_rate": 0.01,
+  "mean_survival_s": 29.8,
+  "runner_near_outer_edge": 0.03,
+  "wall_blocks_line_of_sight": 0.577,
+  "runner_within_1.5_of_wall": 0.785,
+  "runner_loops_around_wall_per_game": 2.96,
+  "games_with_2plus_loops": 0.788
+ },
+ "runs/wall_s3": {
+  "layout": "wall",
+  "games": 500,
+  "catch_rate": 0.038,
+  "mean_survival_s": 29.23,
+  "runner_near_outer_edge": 0.068,
+  "wall_blocks_line_of_sight": 0.543,
+  "runner_within_1.5_of_wall": 0.758,
+  "runner_loops_around_wall_per_game": 3.22,
+  "games_with_2plus_loops": 0.852
+ }
+}

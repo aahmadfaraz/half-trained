@@ -13,3 +13,7 @@ __pycache__/
 **/attempts.npz
 **/weights/*.pt
 experiments/v02-tinygpt/data/*.txt
+**/ckpt/
+*.partial
+*.partial.tmp
+experiments/v03-tag/runs/*.log

@@ -1,0 +1,32 @@
+{
+ "runs/open_s1": {
+  "open": {
+   "catch_rate": 1.0,
+   "mean_catch_s": 5.42
+  },
+  "wall": {
+   "catch_rate": 0.256,
+   "mean_catch_s": 6.9
+  }
+ },
+ "runs/open_s2": {
+  "open": {
+   "catch_rate": 1.0,
+   "mean_catch_s": 5.83
+  },
+  "wall": {
+   "catch_rate": 0.27,
+   "mean_catch_s": 6.91
+  }
+ },
+ "runs/open_s3": {
+  "open": {
+   "catch_rate": 1.0,
+   "mean_catch_s": 5.44
+  },
+  "wall": {
+   "catch_rate": 0.189,
+   "mean_catch_s": 7.29
+  }
+ }
+}
