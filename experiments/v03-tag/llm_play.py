@@ -4,7 +4,7 @@ python llm_play.py --chaser agent:runs/wall_s1 --runner gemini:gemini-4-hydrogen
 
 Player specs: agent:<run folder> (our PPO policy, a move every step) · agent@5:<run folder> (same, each move held 5 steps)
               random · greedy (scripted: straight at / straight away)
-              ollama:<name> · groq:<id> · openrouter:<id> · gemini:<id>
+              ollama:<name> · groq:<id> · openrouter:<id> · gemini:<id> · decision:<id> (Google's Decisions API)
 The game pauses while a model thinks, and while a free quota refills. A model sees what our agent sees, written as
 text, and picks one of the same 9 moves, held for --k steps. Rules for the recorded matches: PREREG.md.
 Keys come from the environment or ENV_FILE. A game in progress is saved to <out>.partial and picked up again on restart."""
@@ -20,6 +20,8 @@ DIRN = ["E", "NE", "N", "NW", "W", "SW", "S", "SE"]
 URLS = {"groq": "https://api.groq.com/openai/v1/chat/completions", "openrouter": "https://openrouter.ai/api/v1/chat/completions"}
 KEYS = {"groq": "GROQ_API_KEY", "openrouter": "OPENROUTER_API_KEY"}
 PATIENCE = 48 * 3600
+CRITERIA = {"0": "No push.", **{str(j + 1): f"Push {d}." for j, d in enumerate(
+    ["east (E)", "north-east (NE)", "north (N)", "north-west (NW)", "west (W)", "south-west (SW)", "south (S)", "south-east (SE)"])}}
 ANSWER_LIMIT = 20 * 60
 
 
@@ -157,8 +159,25 @@ class LLM:
         return {"text": text, "thinking": think, "usage": usage, "served": served, "stop": stop, "seconds": secs, "waited": waited, "retries": retries}
 
     def act(self, A, i, layout, k):
+        if self.kind == "decision": return self.decide(A, i, layout, k)
         prompt = describe(A, i, layout, k); r = self.ask(prompt); move, ok, why = parse(r["text"])
         return move, None, {"move": move, "valid": ok, "why": why, "prompt": prompt, **r}
+
+    def decide(self, A, i, layout, k):
+        """Google's Decisions API: the same state text, then one multiple-choice question. No words come back, only odds."""
+        prompt = describe(A, i, layout, k).split("\n\nChoose your move")[0]
+        gap = self.pace - (time.time() - self.last)
+        if gap > 0: time.sleep(gap)
+        q = {"type": "choice", "instructions": f"Which move should you make for the next {k * DT:.1f} seconds?", "criteria": CRITERIA}
+        r, h, retries, waited, secs = http("gemini", "https://generativelanguage.googleapis.com/v1beta/decisions",
+                                           {"x-goog-api-key": os.environ.get("GEMINI_API_KEY") or os.environ["GOOGLE_AI_STUDIO_API_KEY"]},
+                                           {"model": self.name, "input": prompt, "questions": {"move": q}})
+        self.last = time.time()
+        a = (r.get("answers") or {}).get("move") or {}; ch = str(a.get("choice", "")); ok = ch in CRITERIA
+        pr = a.get("probabilities") or {}; u = r.get("usage") or {}
+        rec = {"move": int(ch) if ok else 0, "valid": ok, "why": "", "prompt": prompt, "question": q, "text": json.dumps(a), "thinking": "", "confidence": a.get("confidence"),
+               "usage": {"in": u.get("total_input_tokens"), "out": u.get("total_output_tokens")}, "served": self.name, "stop": None, "seconds": secs, "waited": waited, "retries": retries}
+        return rec["move"], ([round(float(pr.get(str(j), 0)), 4) for j in range(9)] if pr else None), rec
 
 
 class Agent:

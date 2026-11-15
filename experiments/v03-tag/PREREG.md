@@ -109,3 +109,22 @@ Test games and single test requests were used to build the harness and are not r
    and one local test game (`qwen3.5:4b`, seed 70000, open room) to check change 6.
 8. **The local model's server was restarted at 20:51** with its prompt cache off: it had grown to 12 GB of memory.
    The game in progress (`qwen3.5:4b`, open chaser, seed 90003) continued from its last saved decision, at 11.5 s.
+
+**15 Nov 2026, 21:50 UAE: two more players, added before any of their games.** The matches, seeds, deadline, 0.5 s
+moves and reporting are the same as for everyone else.
+
+9. Gemini 4 Hydrogen's limit of 20 requests a day was found only once the games had started. The AI Studio rate-limit
+   page then showed which Google models have room for full sets on the free tier, and two are added:
+
+   | Model | Access | Model ID | Notes |
+   |---|---|---|---|
+   | Gemini 3.5 Flash-Lite | Google AI Studio free API (500 requests a day) | `gemini-3.5-flash-lite` | plays exactly like the other chat models: same prompt, same reply format |
+   | Gemini Decision 1 | Google's Decisions API, free tier (10,000 requests a day) | `gemini-decision-1` | not a chat model: it returns odds for a list of options and cannot write |
+
+   **How Gemini Decision 1 is asked.** It gets the same text as the others up to and including the "Free space…" line.
+   Then one multiple-choice question: "Which move should you make for the next 0.5 seconds?", with the nine moves as
+   the options (`CRITERIA` in `llm_play.py`). Its move is the option the API returns as its choice. The odds it gives
+   for all nine options are recorded with every decision. It gives no WHY sentence. An answer that is not one of the
+   nine options counts as invalid and it stands still.
+10. **Requests that are not results:** one Decisions API request and one throwaway game (seed 70001, wall room) for
+    Gemini Decision 1; one request to Gemini 3.5 Flash-Lite.
