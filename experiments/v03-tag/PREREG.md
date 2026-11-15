@@ -80,4 +80,19 @@ Test games and single test requests were used to build the harness and are not r
 
 ## Changes after registration
 
-None.
+**15 Nov 2026, 20:30 UAE, before any recorded model game.** No change to the prompt, the moves, the matches or the seeds.
+
+1. **One more control: a tiny runner trained with the same handicap.** The controls above were run first (500 games each,
+   `runs/controls/`). In the wall room our runner as trained was caught 12 times in 500. The same runner with each move
+   held for 0.5 s was caught 492 times in 500. So holding a move for 0.5 s, which every model has to do, is a large
+   handicap by itself. To show what a tiny agent can do under that handicap, the wall runner keeps training with 0.5 s
+   moves against the same fixed chaser (`train_hold.py`, 10 million decisions, seeds 1 to 3 → `runs/hold_wall_s1..3`),
+   and then plays the same 500 control games as `agent@5:runs/hold_wall_s1`. Question 1 is answered against both
+   runners: as trained (a move every 0.1 s) and trained with 0.5 s moves.
+2. **More is recorded per game, nothing is played differently:** the time each decision was made and each game finished,
+   and for the wall room the loops, line-of-sight and near-wall numbers (`tagstats.py`). `--until` stops new games
+   from starting after the deadline. A game that finishes after the deadline is listed as not played.
+3. **Cerebras is not used.** Its trial key answered "payment required" on the single test request. It was never in the
+   table above.
+4. **Request counts so far, corrected:** OpenRouter got 3 single test requests (2 were stopped after waiting minutes for
+   an answer); Gemini and each Groq model got 1.

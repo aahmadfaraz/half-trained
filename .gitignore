@@ -17,3 +17,4 @@ experiments/v02-tinygpt/data/*.txt
 *.partial
 *.partial.tmp
 experiments/v03-tag/runs/*.log
+experiments/v03-tag/runs/llm/logs/

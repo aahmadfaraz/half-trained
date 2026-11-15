@@ -12,6 +12,7 @@ import argparse, json, os, pickle, re, ssl, sys, time, urllib.error, urllib.requ
 import numpy as np, torch
 from stable_baselines3 import PPO
 from arena import Arena, LAYOUTS, SIZE, RAD, VMAX, ACC, DRAG, T_MAX, DT, ray_dists
+from tagstats import wall_stats
 
 PROMPT_V = 1
 CTX = ssl.create_default_context(cafile="/etc/ssl/cert.pem") if os.path.exists("/etc/ssl/cert.pem") else None
@@ -90,11 +91,11 @@ def http(kind, url, headers, body):
             with urllib.request.urlopen(req, timeout=600, context=CTX) as r: out = json.load(r); h = {k.lower(): v for k, v in r.headers.items()}
             err = out.get("error") if isinstance(out, dict) else None
             if not err: return out, h, i, round(waited, 1), round(time.time() - t0, 2)
-            msg = json.dumps(err)[:900]
+            msg = json.dumps(err)[:4000]
             try: code = int(err.get("code"))
             except (AttributeError, TypeError, ValueError): code = 429 if re.search(r"rate.?limit|quota", msg, re.I) else 500
         except urllib.error.HTTPError as e:
-            code = e.code; msg = e.read()[:900].decode(errors="replace")
+            code = e.code; msg = e.read()[:4000].decode(errors="replace")
             if e.headers.get("retry-after") and "try again in" not in msg: msg += f" try again in {e.headers['retry-after']}s"
         except (urllib.error.URLError, TimeoutError, ConnectionError, json.JSONDecodeError) as e:
             code = 599; msg = f"{type(e).__name__}: {e}"
@@ -204,14 +205,14 @@ def play_one(seed, layout, P, k, part):
         for i in (0, 1):
             if due[i]:
                 st["hold"][i], pr, rec = P[i].act(A, i, layout, k)
-                if rec: new.append({"t": round(float(A.t[0] * DT), 1), "player": i, **rec})
+                if rec: new.append({"t": round(float(A.t[0] * DT), 1), "player": i, "at": time.strftime("%Y-%m-%d %H:%M:%S"), **rec})
                 if pr: st["probs"][i].append(pr)
         st["decisions"] += new
         _, catch, timeout = A.step(np.array([st["hold"]]))
         st["xy"].append([round(float(c), 3) for c in (*A.pos[0, 0], *A.pos[0, 1])]); st["acts"].append(list(st["hold"]))
         if catch[0] or timeout[0]: break
     if os.path.exists(part): os.remove(part)
-    out = {"seed": seed, "caught": bool(catch[0]), "seconds": round(len(st["xy"]) * DT, 1), "start": st["start"], "xy": st["xy"], "acts": st["acts"], "decisions": st["decisions"]}
+    out = {"seed": seed, "caught": bool(catch[0]), "seconds": round(len(st["xy"]) * DT, 1), "finished": time.strftime("%Y-%m-%d %H:%M:%S"), "start": st["start"], "xy": st["xy"], "acts": st["acts"], "decisions": st["decisions"]}
     for i, name in ((0, "chaser_probs"), (1, "runner_probs")):
         if st["probs"][i]: out[name] = st["probs"][i]
     return out
@@ -226,6 +227,7 @@ if __name__ == "__main__":
     ap.add_argument("--max_out", type=int, default=4096); ap.add_argument("--pace", type=float, default=0, help="seconds between calls to one model")
     ap.add_argument("--think", choices=["default", "on", "off"], default="default", help="local (ollama) models only")
     ap.add_argument("--light", action="store_true", help="keep only outcomes (for large control sets)")
+    ap.add_argument("--until", default="", help="start no new game after this local time, e.g. '2026-11-17 23:59'")
     ap.add_argument("--out", required=True)
     a = ap.parse_args(); load_env(); torch.set_num_threads(1)
     P = [make(a.chaser, 0, a), make(a.runner, 1, a)]
@@ -238,11 +240,13 @@ if __name__ == "__main__":
     done = {g["seed"] for g in res["games"]}
     for s in range(a.seed0, a.seed0 + a.games):
         if s in done: continue
+        if a.until and time.time() > time.mktime(time.strptime(a.until, "%Y-%m-%d %H:%M")): print("deadline reached", flush=True); break
         try: g = play_one(s, a.layout, P, a.k, a.out + ".partial")
         except Abort as e:
             res["aborted"].append({"seed": s, "when": time.strftime("%Y-%m-%d %H:%M:%S"), "reason": str(e)[:400]})
             json.dump(res, open(a.out, "w")); print(f"seed {s}: stopped, not a result ({str(e)[:200]})", flush=True); sys.exit(3)
-        if a.light: g = {kk: g[kk] for kk in ("seed", "caught", "seconds")}
+        if a.layout == "wall": g.update(wall_stats(g["xy"]))
+        if a.light: g = {kk: v for kk, v in g.items() if kk not in ("start", "xy", "acts", "decisions", "chaser_probs", "runner_probs")}
         res["games"].append(g); res["limits"] = [getattr(p, "limits", {}) for p in P]
         d = g.get("decisions", [])
         if d:
