@@ -1,0 +1,17 @@
+{
+ "role": "runner",
+ "layout": "wall",
+ "seed": 1,
+ "init": "runs/wall_s1",
+ "opponent": "runs/wall_s1",
+ "k": 5,
+ "chunks": 25,
+ "decisions_per_chunk": 400000,
+ "n_envs": 32,
+ "python": "3.12.14",
+ "torch": "2.15.0",
+ "sb3": "2.9.2",
+ "machine": "arm64",
+ "started": "2026-11-15 20:27:42",
+ "finished": "2026-11-15 21:09:48"
+}
