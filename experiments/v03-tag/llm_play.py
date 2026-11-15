@@ -20,6 +20,7 @@ DIRN = ["E", "NE", "N", "NW", "W", "SW", "S", "SE"]
 URLS = {"groq": "https://api.groq.com/openai/v1/chat/completions", "openrouter": "https://openrouter.ai/api/v1/chat/completions"}
 KEYS = {"groq": "GROQ_API_KEY", "openrouter": "OPENROUTER_API_KEY"}
 PATIENCE = 48 * 3600
+ANSWER_LIMIT = 20 * 60
 
 
 class Abort(Exception):
@@ -88,7 +89,14 @@ def http(kind, url, headers, body):
         req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "User-Agent": "half-trained-tests/1.0", **headers})
         t0 = time.time(); msg = ""
         try:
-            with urllib.request.urlopen(req, timeout=600, context=CTX) as r: out = json.load(r); h = {k.lower(): v for k, v in r.headers.items()}
+            with urllib.request.urlopen(req, timeout=180, context=CTX) as r:
+                buf = b""; h = {k.lower(): v for k, v in r.headers.items()}
+                while True:
+                    if time.time() - t0 > ANSWER_LIMIT: raise TimeoutError(f"no complete answer in {ANSWER_LIMIT // 60} min")
+                    part = r.read1(65536)
+                    if not part: break
+                    buf += part
+            out = json.loads(buf)
             err = out.get("error") if isinstance(out, dict) else None
             if not err: return out, h, i, round(waited, 1), round(time.time() - t0, 2)
             msg = json.dumps(err)[:4000]

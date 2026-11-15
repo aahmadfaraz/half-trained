@@ -96,3 +96,14 @@ Test games and single test requests were used to build the harness and are not r
    table above.
 4. **Request counts so far, corrected:** OpenRouter got 3 single test requests (2 were stopped after waiting minutes for
    an answer); Gemini and each Groq model got 1.
+
+**15 Nov 2026, 20:50 UAE, while the games are running.** Again nothing about the prompt, the moves, the matches or the seeds.
+
+5. **Gemini 4 Hydrogen's free API allows 20 requests a day** (the API's own error message, 20:35). Its first game
+   stopped at 10.0 s of game time after 20 decisions, uncaught so far, and continues when the quota refills (midnight
+   Pacific time). At that rate it can finish about one 30-second game before the deadline. The rule stands: what is not
+   finished by the deadline is listed as not played. No second project or key is used to get around the limit.
+6. **A model that sends no complete answer within 20 minutes is asked the same question again.** The first request
+   to Nemotron hung for 10 minutes without an answer. No answer that arrives is ever dropped.
+7. **Two more requests that are not results:** one Groq request to `qwen/qwen3.8-27b` to read a rate-limit message,
+   and one local test game (`qwen3.5:4b`, seed 70000, open room) to check change 6.
