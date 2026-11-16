@@ -114,7 +114,9 @@ def http(kind, url, headers, body):
         else: raise RuntimeError(f"HTTP {code}: {msg[:300]}")
         if fails > 12 or waited + wait > PATIENCE: raise Abort(f"HTTP {code}: {msg[:300]}")
         if wait > 60: print(f"   waiting {wait / 60:.0f} min ({kind}: {msg[:140]!r})", flush=True)
-        time.sleep(wait); waited += wait; i += 1
+        end = time.time() + wait
+        while time.time() < end: time.sleep(max(0.05, min(30, end - time.time())))
+        waited += wait; i += 1
 
 
 class LLM:

@@ -132,3 +132,10 @@ moves and reporting are the same as for everyone else.
     5-game sets were already complete in all three matches; it had played 20, 18 and 5 games (wall runner, open chaser,
     open runner). The extended set continues from the saved decision when the model server is started again.
     Resumed at 22:57 the same evening, from the saved decision.
+12. **Quota waits now follow the clock (16 Nov, 11:05).** This Mac was asleep from about 09:10 to 11:04 on 16 Nov (lid
+    closed). All five jobs carried on when it woke. A quota wait used to count only the time the Mac was awake, so a
+    wait for a daily reset ended later by however long the lid had been closed. `llm_play.py` now waits until the clock
+    time instead. The three jobs sitting in long waits (Gemini 4 Hydrogen, Gemini 3.5 Flash-Lite, Nemotron 3 Ultra)
+    were stopped and started again at 11:05 and continued from their saved decisions (10.0 s, 5.0 s and 23.5 s into
+    their games). Nothing about the prompt, moves, matches or seeds changed. Gemini 3.5 Flash-Lite's quota turned out
+    to be open again at 11:05, earlier than the 12:03 the harness had assumed, and it played on at once.
