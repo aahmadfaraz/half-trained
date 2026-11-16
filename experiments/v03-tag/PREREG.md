@@ -137,5 +137,6 @@ moves and reporting are the same as for everyone else.
     wait for a daily reset ended later by however long the lid had been closed. `llm_play.py` now waits until the clock
     time instead. The three jobs sitting in long waits (Gemini 4 Hydrogen, Gemini 3.5 Flash-Lite, Nemotron 3 Ultra)
     were stopped and started again at 11:05 and continued from their saved decisions (10.0 s, 5.0 s and 23.5 s into
-    their games). Nothing about the prompt, moves, matches or seeds changed. Gemini 3.5 Flash-Lite's quota turned out
-    to be open again at 11:05, earlier than the 12:03 the harness had assumed, and it played on at once.
+    their games). Nothing about the prompt, moves, matches or seeds changed. Gemini 3.5 Flash-Lite got two more moves
+    through at 11:05 (its 14th wall-runner game ended: caught at 5.8 s), then the quota answer came back and it waits
+    until 12:03 like Gemini 4 Hydrogen.
