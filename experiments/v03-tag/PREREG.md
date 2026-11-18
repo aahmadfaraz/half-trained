@@ -140,3 +140,9 @@ moves and reporting are the same as for everyone else.
     their games). Nothing about the prompt, moves, matches or seeds changed. Gemini 3.5 Flash-Lite got two more moves
     through at 11:05 (its 14th wall-runner game ended: caught at 5.8 s), then the quota answer came back and it waits
     until 12:03 like Gemini 4 Hydrogen.
+
+## After the deadline (Wed 18 Nov 2026, 00:50 UAE)
+
+- The numbers above come from `llm_report.py` → `runs/llm_report.md` and `runs/llm_report.json`. Games that finished after the deadline are listed as not played: they stay in the game files with their finish time, and the report leaves them out. Games still in progress at the deadline are not in the files at all.
+- **Not registered, exploratory:** `aim_stats.py` → `runs/aim.json` measures how each chaser in the open room aims: the angle between its push and the straight line to the runner, and how often it turns toward where the runner is heading. It was written after the games to explain question 2. It is not one of the registered questions.
+- The exhibition (model against model) was not played: no free quota was left.

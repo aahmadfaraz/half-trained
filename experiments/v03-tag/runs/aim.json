@@ -1,0 +1,62 @@
+{
+ "control-agent": {
+  "decisions": 1059,
+  "mean_deg_off_straight": 30.8,
+  "share_straight_at_runner": 0.424,
+  "share_turned_toward_where_it_is_going": 0.818
+ },
+ "control-agent@5": {
+  "decisions": 370,
+  "mean_deg_off_straight": 34.0,
+  "share_straight_at_runner": 0.373,
+  "share_turned_toward_where_it_is_going": 0.841
+ },
+ "control-greedy": {
+  "decisions": 1200,
+  "mean_deg_off_straight": 10.6,
+  "share_straight_at_runner": 1.0,
+  "share_turned_toward_where_it_is_going": 0.515
+ },
+ "control-random": {
+  "decisions": 5303,
+  "mean_deg_off_straight": 89.0,
+  "share_straight_at_runner": 0.127,
+  "share_turned_toward_where_it_is_going": 0.498
+ },
+ "gemini-3.5-flash-lite": {
+  "decisions": 1200,
+  "mean_deg_off_straight": 14.5,
+  "share_straight_at_runner": 0.785,
+  "share_turned_toward_where_it_is_going": 0.572
+ },
+ "gemini-decision-1": {
+  "decisions": 1113,
+  "mean_deg_off_straight": 27.1,
+  "share_straight_at_runner": 0.481,
+  "share_turned_toward_where_it_is_going": 0.759
+ },
+ "gpt-oss-120b": {
+  "decisions": 287,
+  "mean_deg_off_straight": 25.9,
+  "share_straight_at_runner": 0.554,
+  "share_turned_toward_where_it_is_going": 0.67
+ },
+ "nemotron-3-ultra-550b": {
+  "decisions": 22,
+  "mean_deg_off_straight": 28.5,
+  "share_straight_at_runner": 0.364,
+  "share_turned_toward_where_it_is_going": 0.81
+ },
+ "qwen3.5-4b": {
+  "decisions": 1175,
+  "mean_deg_off_straight": 77.1,
+  "share_straight_at_runner": 0.21,
+  "share_turned_toward_where_it_is_going": 0.531
+ },
+ "qwen3.8-27b": {
+  "decisions": 761,
+  "mean_deg_off_straight": 31.1,
+  "share_straight_at_runner": 0.534,
+  "share_turned_toward_where_it_is_going": 0.544
+ }
+}

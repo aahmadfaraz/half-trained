@@ -1,0 +1,875 @@
+{
+ "wall_runner": {
+  "control-agent": {
+   "model": "agent:runs/wall_s1",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null,
+    "loops": 3.48,
+    "blocked": 0.674,
+    "near_wall": 0.896
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null,
+    "loops": 3.84,
+    "blocked": 0.609,
+    "near_wall": 0.922
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-agent@5": {
+   "model": "agent@5:runs/wall_s1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 17.1,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 17.1,
+    "loops": 1.8,
+    "blocked": 0.38,
+    "near_wall": 0.757
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 16.52,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 16.52,
+    "loops": 1.84,
+    "blocked": 0.261,
+    "near_wall": 0.818
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-greedy": {
+   "model": "greedy",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 5.64,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.64,
+    "loops": 0.04,
+    "blocked": 0.214,
+    "near_wall": 0.006
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.29,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.29,
+    "loops": 0.07,
+    "blocked": 0.157,
+    "near_wall": 0.027
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-hold-s1": {
+   "model": "agent@5:runs/hold_wall_s1",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null,
+    "loops": 1.54,
+    "blocked": 0.877,
+    "near_wall": 0.945
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null,
+    "loops": 1.68,
+    "blocked": 0.768,
+    "near_wall": 0.932
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": false
+  },
+  "control-random": {
+   "model": "random",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.84,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 3.84,
+    "loops": 0.02,
+    "blocked": 0.295,
+    "near_wall": 0.186
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 4.41,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 4.41,
+    "loops": 0.03,
+    "blocked": 0.193,
+    "near_wall": 0.047
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-3.5-flash-lite": {
+   "model": "gemini:gemini-3.5-flash-lite",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 6.26,
+    "decisions": 65,
+    "invalid": 0,
+    "s_per_decision": 0.98,
+    "tokens_in_per_decision": 526,
+    "tokens_out_per_decision": 30,
+    "mean_s_when_caught": 6.26,
+    "loops": 0.22,
+    "blocked": 0.186,
+    "near_wall": 0.038
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.45,
+    "decisions": 170,
+    "invalid": 0,
+    "s_per_decision": 1.1,
+    "tokens_in_per_decision": 526,
+    "tokens_out_per_decision": 31,
+    "mean_s_when_caught": 5.45,
+    "loops": 0.17,
+    "blocked": 0.168,
+    "near_wall": 0.106
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-4-hydrogen": {
+   "model": "gemini:gemini-4-hydrogen",
+   "registered": {
+    "n": 1,
+    "caught": 1,
+    "mean_s": 18.7,
+    "decisions": 38,
+    "invalid": 1,
+    "s_per_decision": 36.6,
+    "tokens_in_per_decision": 556,
+    "tokens_out_per_decision": 35,
+    "mean_s_when_caught": 18.7,
+    "loops": 1.93,
+    "blocked": 0.198,
+    "near_wall": 0.508
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": true,
+   "all_three_registered_sets_done": false
+  },
+  "gemini-decision-1": {
+   "model": "decision:gemini-decision-1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 4.44,
+    "decisions": 47,
+    "invalid": 0,
+    "s_per_decision": 0.66,
+    "tokens_in_per_decision": 634,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": 4.44,
+    "loops": 0.18,
+    "blocked": 0.352,
+    "near_wall": 0.57
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 4.41,
+    "decisions": 139,
+    "invalid": 0,
+    "s_per_decision": 0.63,
+    "tokens_in_per_decision": 634,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": 4.41,
+    "loops": 0.24,
+    "blocked": 0.269,
+    "near_wall": 0.232
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gpt-oss-120b": {
+   "model": "groq:openai/gpt-oss-120b",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 5.48,
+    "decisions": 56,
+    "invalid": 0,
+    "s_per_decision": 2.4,
+    "tokens_in_per_decision": 567,
+    "tokens_out_per_decision": 831,
+    "mean_s_when_caught": 5.48,
+    "loops": 0.08,
+    "blocked": 0.205,
+    "near_wall": 0.072
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": false
+  },
+  "nemotron-3-ultra-550b": {
+   "model": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 5.06,
+    "decisions": 52,
+    "invalid": 39,
+    "s_per_decision": 111.18,
+    "tokens_in_per_decision": 529,
+    "tokens_out_per_decision": 3754,
+    "mean_s_when_caught": 5.06,
+    "loops": 0.07,
+    "blocked": 0.219,
+    "near_wall": 0.352
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": false
+  },
+  "qwen3.5-4b": {
+   "model": "ollama:qwen3.5:4b",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 4.92,
+    "decisions": 52,
+    "invalid": 0,
+    "s_per_decision": 4.34,
+    "tokens_in_per_decision": 538,
+    "tokens_out_per_decision": 39,
+    "mean_s_when_caught": 4.92,
+    "loops": 0.04,
+    "blocked": 0.14,
+    "near_wall": 0.028
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 4.81,
+    "decisions": 150,
+    "invalid": 0,
+    "s_per_decision": 5.33,
+    "tokens_in_per_decision": 538,
+    "tokens_out_per_decision": 39,
+    "mean_s_when_caught": 4.81,
+    "loops": 0.11,
+    "blocked": 0.172,
+    "near_wall": 0.031
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "qwen3.8-27b": {
+   "model": "groq:qwen/qwen3.8-27b",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 5.18,
+    "decisions": 54,
+    "invalid": 0,
+    "s_per_decision": 0.21,
+    "tokens_in_per_decision": 538,
+    "tokens_out_per_decision": 35,
+    "mean_s_when_caught": 5.18,
+    "loops": 0.03,
+    "blocked": 0.203,
+    "near_wall": 0.031
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.87,
+    "decisions": 183,
+    "invalid": 0,
+    "s_per_decision": 0.22,
+    "tokens_in_per_decision": 538,
+    "tokens_out_per_decision": 35,
+    "mean_s_when_caught": 5.87,
+    "loops": 0.12,
+    "blocked": 0.145,
+    "near_wall": 0.045
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  }
+ },
+ "open_chaser": {
+  "control-agent": {
+   "model": "agent:runs/open_s1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 4.78,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 4.78
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.49,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.49
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-agent@5": {
+   "model": "agent@5:runs/open_s1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 10.14,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 10.14
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 8.76,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 8.76
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-greedy": {
+   "model": "greedy",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-random": {
+   "model": "random",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": null
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-3.5-flash-lite": {
+   "model": "gemini:gemini-3.5-flash-lite",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 300,
+    "invalid": 0,
+    "s_per_decision": 0.93,
+    "tokens_in_per_decision": 453,
+    "tokens_out_per_decision": 27,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 900,
+    "invalid": 0,
+    "s_per_decision": 1.97,
+    "tokens_in_per_decision": 453,
+    "tokens_out_per_decision": 26,
+    "mean_s_when_caught": null
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-decision-1": {
+   "model": "decision:gemini-decision-1",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 300,
+    "invalid": 0,
+    "s_per_decision": 0.68,
+    "tokens_in_per_decision": 561,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 15,
+    "caught": 3,
+    "mean_s": 27.03,
+    "decisions": 813,
+    "invalid": 0,
+    "s_per_decision": 0.65,
+    "tokens_in_per_decision": 561,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": 15.17
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gpt-oss-120b": {
+   "model": "groq:openai/gpt-oss-120b",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 300,
+    "invalid": 11,
+    "s_per_decision": 3.71,
+    "tokens_in_per_decision": 495,
+    "tokens_out_per_decision": 1466,
+    "mean_s_when_caught": null
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": false
+  },
+  "nemotron-3-ultra-550b": {
+   "model": "openrouter:nvidia/nemotron-3-ultra-550b-a55b:free",
+   "registered": {
+    "n": 1,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 60,
+    "invalid": 38,
+    "s_per_decision": 85.04,
+    "tokens_in_per_decision": 458,
+    "tokens_out_per_decision": 3432,
+    "mean_s_when_caught": null
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": true,
+   "all_three_registered_sets_done": false
+  },
+  "qwen3.5-4b": {
+   "model": "ollama:qwen3.5:4b",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 300,
+    "invalid": 0,
+    "s_per_decision": 5.34,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 37,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 15,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 900,
+    "invalid": 0,
+    "s_per_decision": 4.59,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 37,
+    "mean_s_when_caught": null
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "qwen3.8-27b": {
+   "model": "groq:qwen/qwen3.8-27b",
+   "registered": {
+    "n": 5,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 300,
+    "invalid": 0,
+    "s_per_decision": 0.21,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 33,
+    "mean_s_when_caught": null
+   },
+   "extended": {
+    "n": 8,
+    "caught": 0,
+    "mean_s": 30.0,
+    "decisions": 480,
+    "invalid": 0,
+    "s_per_decision": 0.27,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 34,
+    "mean_s_when_caught": null
+   },
+   "late_not_played": [
+    90013
+   ],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  }
+ },
+ "open_runner": {
+  "control-agent": {
+   "model": "agent:runs/open_s1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 4.78,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 4.78
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.49,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.49
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-agent@5": {
+   "model": "agent@5:runs/open_s1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 5.0,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.0
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 5.54,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 5.54
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-greedy": {
+   "model": "greedy",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 4.18,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 4.18
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 4.46,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 4.46
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "control-random": {
+   "model": "random",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.42,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 3.42
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 3.46,
+    "decisions": 0,
+    "invalid": 0,
+    "s_per_decision": null,
+    "tokens_in_per_decision": null,
+    "tokens_out_per_decision": null,
+    "mean_s_when_caught": 3.46
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-3.5-flash-lite": {
+   "model": "gemini:gemini-3.5-flash-lite",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.68,
+    "decisions": 38,
+    "invalid": 0,
+    "s_per_decision": 0.92,
+    "tokens_in_per_decision": 454,
+    "tokens_out_per_decision": 30,
+    "mean_s_when_caught": 3.68
+   },
+   "extended": {
+    "n": 2,
+    "caught": 2,
+    "mean_s": 4.4,
+    "decisions": 19,
+    "invalid": 0,
+    "s_per_decision": 3.37,
+    "tokens_in_per_decision": 453,
+    "tokens_out_per_decision": 32,
+    "mean_s_when_caught": 4.4
+   },
+   "late_not_played": [
+    90007
+   ],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gemini-decision-1": {
+   "model": "decision:gemini-decision-1",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.04,
+    "decisions": 32,
+    "invalid": 0,
+    "s_per_decision": 0.62,
+    "tokens_in_per_decision": 561,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": 3.04
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 3.2,
+    "decisions": 103,
+    "invalid": 0,
+    "s_per_decision": 0.73,
+    "tokens_in_per_decision": 561,
+    "tokens_out_per_decision": 0,
+    "mean_s_when_caught": 3.2
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "gpt-oss-120b": {
+   "model": "groq:openai/gpt-oss-120b",
+   "registered": {
+    "n": 4,
+    "caught": 4,
+    "mean_s": 4.42,
+    "decisions": 37,
+    "invalid": 1,
+    "s_per_decision": 2.82,
+    "tokens_in_per_decision": 495,
+    "tokens_out_per_decision": 1079,
+    "mean_s_when_caught": 4.42
+   },
+   "extended": null,
+   "late_not_played": [
+    90004
+   ],
+   "in_progress": false,
+   "all_three_registered_sets_done": false
+  },
+  "qwen3.5-4b": {
+   "model": "ollama:qwen3.5:4b",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.72,
+    "decisions": 38,
+    "invalid": 0,
+    "s_per_decision": 4.92,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 37,
+    "mean_s_when_caught": 3.72
+   },
+   "extended": {
+    "n": 15,
+    "caught": 15,
+    "mean_s": 3.42,
+    "decisions": 110,
+    "invalid": 0,
+    "s_per_decision": 4.81,
+    "tokens_in_per_decision": 465,
+    "tokens_out_per_decision": 36,
+    "mean_s_when_caught": 3.42
+   },
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  },
+  "qwen3.8-27b": {
+   "model": "groq:qwen/qwen3.8-27b",
+   "registered": {
+    "n": 5,
+    "caught": 5,
+    "mean_s": 3.62,
+    "decisions": 37,
+    "invalid": 0,
+    "s_per_decision": 0.21,
+    "tokens_in_per_decision": 466,
+    "tokens_out_per_decision": 35,
+    "mean_s_when_caught": 3.62
+   },
+   "extended": null,
+   "late_not_played": [],
+   "in_progress": false,
+   "all_three_registered_sets_done": true
+  }
+ }
+}
