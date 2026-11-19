@@ -61,7 +61,7 @@
 | qwen3.5-4b | 0 of 15 | 30.0 s | 0 of 900 | 4.59 s | 466 / 37 |
 | qwen3.8-27b | 0 of 8 | 30.0 s | 0 of 480 | 0.27 s | 466 / 34 |
 
-- nemotron-3-ultra-550b: a game was still in progress at the deadline (not played).
+- nemotron-3-ultra-550b: finished after the deadline, not played: seeds [90001].
 - qwen3.8-27b: finished after the deadline, not played: seeds [90013].
 
 ## Open runner: the model runs, our open chaser chases: Registered set (seeds 90000-90004)

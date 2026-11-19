@@ -571,8 +571,10 @@
     "mean_s_when_caught": null
    },
    "extended": null,
-   "late_not_played": [],
-   "in_progress": true,
+   "late_not_played": [
+    90001
+   ],
+   "in_progress": false,
    "all_three_registered_sets_done": false
   },
   "qwen3.5-4b": {
