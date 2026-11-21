@@ -12,6 +12,7 @@ environment, training and evaluation scripts, settings, seeds and results.
 |---|---|---|
 | 01 | [AI Learns to Land a Rocket. Then I Break One Engine.](https://youtu.be/_D4dPklPbP8) | `experiments/v01-rocket` |
 | 02 | [I Trained a Tiny ChatGPT on Shakespeare to See What's Inside](https://youtu.be/gWbRwQvJD48) | `experiments/v02-tinygpt` |
+| 03 | [Tiny AI vs 7 Giant AIs: Who Wins at Tag?](https://youtu.be/9NDolc3DRus) | `experiments/v03-tag` |
 
 ## Setup
 Python 3.12:
