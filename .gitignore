@@ -18,3 +18,7 @@ experiments/v02-tinygpt/data/*.txt
 *.partial.tmp
 experiments/v03-tag/runs/*.log
 experiments/v03-tag/runs/llm/logs/
+experiments/inkling-loops/kaggle/**/out_*/
+experiments/inkling-loops/kaggle/**/kernel-metadata.json
+experiments/inkling-loops/kaggle/run-*/
+*.tgz
