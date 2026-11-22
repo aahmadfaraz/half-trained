@@ -29,4 +29,9 @@ Written 22 Nov 2026, before any of the runs below. Changes after this commit are
 - A difference between two loop counts is called "real" only if the 95% intervals don't overlap, or with a paired exact McNemar test (p < 0.05) on the same items. Otherwise it is "no clear difference".
 
 ## Changes after registration
-(none yet)
+- **22 Nov 2026, before the probe ran and before any result of the main runs was seen: an exploratory probe** (`kaggle/probe/`), to look inside the model for the video.
+  - Same llama.cpp commit, built for CPU, plus a small tool (`probe.cpp`) that saves tensors through llama.cpp's evaluation callback.
+  - Prompts: the first 10 items of each arithmetic type (30 items, same prompts, effort "none", same chat template), plus the raw text "The cat sat on the" with no template. Loops 1-6.
+  - Saved for the last prompt token: every layer slot's output (`l_out`), the 8 routed experts and their weights in every layer slot, and the top-20 next-token probabilities for up to 12 greedy steps.
+  - Descriptive only, no hypothesis test. Used for: which experts each pass picks, how much each pass changes the output of the last loop layer, and the model's top guesses at each loop count.
+  - CPU arithmetic can differ slightly from the GPU runs; we report how often the probe's answers match the GPU runs on the same items.
