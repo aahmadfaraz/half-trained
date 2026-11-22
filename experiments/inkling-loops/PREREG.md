@@ -35,3 +35,9 @@ Written 22 Nov 2026, before any of the runs below. Changes after this commit are
   - Saved for the last prompt token: every layer slot's output (`l_out`), the 8 routed experts and their weights in every layer slot, and the top-20 next-token probabilities for up to 12 greedy steps.
   - Descriptive only, no hypothesis test. Used for: which experts each pass picks, how much each pass changes the output of the last loop layer, and the model's top guesses at each loop count.
   - CPU arithmetic can differ slightly from the GPU runs; we report how often the probe's answers match the GPU runs on the same items.
+- **22 Nov 2026 ~15:45, before any accuracy result of any run was seen: a forced-silent condition** (`kaggle/probe/silent.py`).
+  - Why: the probe's first pass (loops=1, its own 31 prompts) showed that at effort "none" the model still opens a separate thinking message ("<|message_model|><|content_thinking|>…") before it answers. So effort "none" is not silent. The effort-"none" runs above are still reported exactly as registered.
+  - What: the same 300 arithmetic prompts and chat template (effort "none"), with the model's answer message already opened as text (`<|message_model|><|content_text|>` appended), so no thinking message is possible. Greedy, up to 10 tokens, CPU build of the same commit, loops 1-6. Score: the last integer before `<|end_message|>` equals the true value. Same analysis as Question 1 (Wilson intervals, McNemar between loop counts).
+  - This becomes the main "thinking without words" test for the video; both are reported.
+  - The probe now uses the same forced format for its 30 arithmetic prompts, so the saved internals are the computation of the answer's first token. The first probe run (no forced answer) failed while saving (a text-encoding bug); its partial output is kept but not used.
+

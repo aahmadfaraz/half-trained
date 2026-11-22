@@ -1,6 +1,6 @@
 // ht-probe: run prompts through the model and save, for the last prompt token, every layer slot's output (l_out),
 // the 8 routed experts and their weights, plus the top next-token probabilities for a short greedy continuation.
-// usage: ht-probe MODEL LOOPS PROMPT_DIR OUT_DIR N_GEN THREADS
+// usage: ht-probe MODEL LOOPS PROMPT_DIR OUT_DIR N_GEN THREADS [CAPTURE=1]
 #include "llama.h"
 #include "ggml.h"
 #include "ggml-backend.h"
@@ -79,6 +79,7 @@ int main(int argc, char ** argv) {
     }
     const std::string model_path = argv[1], prompt_dir = argv[3], out_dir = argv[4];
     const int loops = atoi(argv[2]), n_gen = atoi(argv[5]), threads = atoi(argv[6]);
+    const bool capture_on = argc < 8 || atoi(argv[7]) != 0;
     std::filesystem::create_directories(out_dir);
 
     llama_backend_init();
@@ -118,7 +119,7 @@ int main(int argc, char ** argv) {
         if (n < 0) { fprintf(stderr, "%s: tokenize failed\n", id.c_str()); continue; }
         toks.resize(n);
 
-        cap.f32.clear(); cap.i32.clear(); cap.on = true;
+        cap.f32.clear(); cap.i32.clear(); cap.on = capture_on;
         if (llama_decode(ctx, llama_batch_get_one(toks.data(), (int) toks.size()))) { fprintf(stderr, "%s: decode failed\n", id.c_str()); continue; }
         cap.on = false;
 
