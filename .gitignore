@@ -22,3 +22,8 @@ experiments/inkling-loops/kaggle/**/out_*/
 experiments/inkling-loops/kaggle/**/kernel-metadata.json
 experiments/inkling-loops/kaggle/run-*/
 *.tgz
+
+# local run helpers
+experiments/inkling-loops/kaggle/watch.*
+**/.done
+**/.pushed

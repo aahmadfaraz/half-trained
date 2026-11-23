@@ -41,3 +41,6 @@ Written 22 Nov 2026, before any of the runs below. Changes after this commit are
   - This becomes the main "thinking without words" test for the video; both are reported.
   - The probe now uses the same forced format for its 30 arithmetic prompts, so the saved internals are the computation of the answer's first token. The first probe run (no forced answer) failed while saving (a text-encoding bug); its partial output is kept but not used.
 
+- **23 Nov 2026, reported after the runs (not a design change): what did not go as planned.**
+  - Memory test: at effort "none" the model's thinking message used the whole 256-token budget in 99-100 of 100 items at every loop count, so recall is 0-1.6% for a design reason. Reported as registered; not re-run.
+  - GPQA: both kernels reached Kaggle's 12-hour run limit and the free weekly GPU quota ran out. Loops 1, 2, 4 and 5 are complete (198 questions each). Loops 3 (14 questions) and 6 (56 questions) are incomplete and are not used for any comparison. They can be finished after the quota resets.
