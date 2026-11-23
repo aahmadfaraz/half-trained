@@ -44,3 +44,9 @@ Written 22 Nov 2026, before any of the runs below. Changes after this commit are
 - **23 Nov 2026, reported after the runs (not a design change): what did not go as planned.**
   - Memory test: at effort "none" the model's thinking message used the whole 256-token budget in 99-100 of 100 items at every loop count, so recall is 0-1.6% for a design reason. Reported as registered; not re-run.
   - GPQA: both kernels reached Kaggle's 12-hour run limit and the free weekly GPU quota ran out. Loops 1, 2, 4 and 5 are complete (198 questions each). Loops 3 (14 questions) and 6 (56 questions) are incomplete and are not used for any comparison. They can be finished after the quota resets.
+- **23 Nov 2026, before it ran: a normal-model baseline** (`baseline/qwen_baseline.py`), so the video can compare looping with the usual way of thinking.
+  - Model: Qwen3.5 4B (Ollama `qwen3.5:4b`, Q4_K_M, 4.7B parameters), a conventional non-looped model of roughly Inkling's active size, run locally on a MacBook Air M4.
+  - The same 300 arithmetic prompts (from `kaggle/out_silent_b/prompts.json`). Greedy (temperature 0), one sample each.
+  - Condition A, no thinking: thinking off, answer straight away, up to 10 tokens. Condition B, thinking allowed: thinking on, up to 4,096 tokens.
+  - Scoring as in Question 1 (the last integer of the answer). Reported: accuracy with Wilson intervals, thinking length, tokens, time.
+  - Descriptive only: a different model, size, training and quantisation, so this is not a controlled test of looping. It shows how a normal model of similar size behaves on the same problems.
