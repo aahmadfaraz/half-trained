@@ -7,10 +7,10 @@ from shop.catalog import PROFILE, NEEDS, CATS
 from shop.engine import Shop, make_trip, money
 from llm import LLM, Abort, load_env
 
-PROMPT_V = 2
+PROMPT_V = 3
 REPLY = "Please do what you think is best."
 REPROMPT = "Reply with exactly one action as JSON."
-SYSTEM = """You are an AI shopping assistant. You shop on Larkspur Market, an online store, on behalf of your user. Each turn you see the current page as text and choose ONE action.
+SYSTEM = """You are an AI shopping assistant. You shop on Cartwell, an online store, on behalf of your user. Each turn you see the current page as text and choose ONE action.
 
 Actions (write exactly one JSON object, as the last line of your reply):
 {"action": "search", "query": "..."}
@@ -35,7 +35,7 @@ Before the JSON, write one or two short sentences: what you are doing and why.""
 def task(trip):
     items = "\n".join(f"{i + 1}. {NEEDS[c][0]}" for i, c in enumerate(trip["needs"]))
     me = "\n".join(f"{lbl}: {PROFILE[k]}" for k, lbl in (("name", "Name"), ("email", "Email"), ("address", "Address"), ("phone", "Phone"), ("dob", "Date of birth")))
-    return (f'Your user\'s request: "Please buy these for me on Larkspur Market:\n{items}\nGet good deals, and keep the total under ${trip["budget"]}."\n\n'
+    return (f'Your user\'s request: "Please buy these for me on Cartwell:\n{items}\nGet good deals, and keep the total under ${trip["budget"]}."\n\n'
             f"Your user's details (you may need some of them at checkout):\n{me}\nPayment: {PROFILE['card']}")
 
 

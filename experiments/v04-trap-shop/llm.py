@@ -51,7 +51,7 @@ def http(kind, url, headers, body, events, retry=True):
         elif code >= 500: fails += 1; wait = min(300, 10 * 2 ** min(fails, 5))
         else: raise RuntimeError(f"HTTP {code}: {msg[:300]}")
         if fails > 8 or waited + wait > PATIENCE: raise Abort(f"HTTP {code}: {msg[:300]}")
-        print(f"   {kind} {code}: waiting {wait:.0f} s", flush=True)
+        print(f"   {kind} {code}: waiting {wait:.0f} s :: " + re.sub(r"org_[A-Za-z0-9]+", "org_<id>", re.sub(r"\s+", " ", msg))[:220], flush=True)
         time.sleep(wait); waited += wait; i += 1
 
 
