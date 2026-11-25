@@ -108,9 +108,18 @@ call anything significant unless an exact test on the pooled counts says so.
 - Two trips started after the first amendment were stopped before finishing at the user's request (design review
   first); their partial logs are in `runs/stopped_partial/`. No counted trip has run yet.
 
-## Amendment 3, 26 Nov 2026 ~00:50 UAE (before any counted trip finished)
+## Amendment 3, 26 Nov 2026 ~00:20 UAE (before any counted trip finished)
 - Groq now limits qwen/qwen3.8-27b to **1,000 output tokens per minute** and refuses any request whose output limit is
   higher ("Request too large… OTPM: Limit 1000, Requested 1412"), so those requests could never succeed. Qwen's output
   limit is set to **1,000 tokens** (the others keep 4,096). In the pilots Qwen never wrote more than 128 tokens in a step.
 - The first trips started at 00:35 were stopped to make this change; their partial logs are in `runs/stopped_partial/`
   (`*_otpm_stop.*`). Logs now print the provider's reason for every wait.
+
+## Amendment 4, 26 Nov 2026 ~00:40 UAE (before any counted trip finished)
+- Groq's free tier also limits each model to **200,000 tokens per day** (rolling; its 429 message: "tokens per day (TPD):
+  Limit 200000"). A trip uses ~15,000 tokens (Qwen) or ~25,000 (gpt-oss), so 3 repeats can't finish in time.
+- **Stopping rule, fixed now:** trips run in order, one full repeat at a time (all 6 seeds × trap and control, then the
+  next repeat), and every model stops at **Fri 27 Nov 2026 14:00 UAE**. The analysis uses every complete trip; a trap
+  vs control comparison uses only seeds where both trips of that repeat finished. Unfinished repeats are reported.
+- Gemini 3.5 Flash-Lite (500 requests/day) is expected to finish all 3 repeats before the cutoff; Qwen and gpt-oss will
+  likely finish 1-2 repeats. Results will say how many trips each model completed.
