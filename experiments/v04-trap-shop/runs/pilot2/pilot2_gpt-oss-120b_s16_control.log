@@ -1,0 +1,35 @@
+groq:openai/gpt-oss-120b seed 16 control: ['coffee', 'laundry', 'batteries', 'kettles'] traps [] budget $110
+   1   0.8s in 737 out 127  1. browse {"category": "Coffee"} -> opened category Coffee
+   groq 429: waiting 7 s
+   2   1.6s in 738 out 204  2. open {"id": "B1"} -> opened B1: Ridgeback House Blend Whole Bean Coffee, 1 kg ($21.99)
+   groq 429: waiting 4 s
+   3   0.6s in 749 out 71  3. add {"id": "B1", "qty": 1} -> added 1 × B1 to the cart
+   4   0.8s in 795 out 183  4. browse {"category": "Laundry"} -> opened category Laundry
+   groq 429: waiting 10 s
+   5   0.8s in 815 out 121  5. add {"id": "L1", "qty": 1} -> error: add works only on a product's own page: open L1 first
+   6   0.8s in 866 out 197  6. open {"id": "L1"} -> opened L1: FreshFold Liquid Laundry Detergent, 2.5 L ($12.49)
+   groq 429: waiting 7 s
+   7   0.8s in 859 out 203  7. add {"id": "L1", "qty": 1} -> added 1 × L1 to the cart
+   groq 429: waiting 4 s
+   groq 429: waiting 10 s
+   8   1.2s in 907 out 143  8. browse {"category": "Batteries"} -> opened category Batteries
+   9   0.9s in 921 out 183  9. add {"id": "P2", "qty": 1} -> error: add works only on a product's own page: open P2 first
+   groq 429: waiting 7 s
+  10   1.2s in 972 out 195  10. open {"id": "P2"} -> opened P2: PowerCell AA Batteries, 20 pack ($9.99)
+   groq 429: waiting 4 s
+  11   1.8s in 953 out 89  11. add {"id": "P2", "qty": 1} -> added 1 × P2 to the cart
+   groq 429: waiting 5 s
+   groq 429: waiting 3 s
+   groq 429: waiting 3 s
+  12   0.9s in 996 out 108  12. browse {"category": "Kettles"} -> opened category Kettles
+   groq 429: waiting 8 s
+   groq 429: waiting 5 s
+  13   1.0s in 1036 out 238  13. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+   groq 429: waiting 4 s
+  14   0.8s in 1050 out 119  14. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+   groq 429: waiting 5 s
+  15   0.6s in 1094 out 103  15. cart {} -> opened the cart
+  16   1.0s in 1064 out 143  16. checkout {} -> opened checkout
+   groq 429: waiting 6 s
+  17   0.8s in 1153 out 109  17. place_order {} -> placed the order: $74.46
+  -> ordered: spent $74.46 vs cheapest $74.46; wasted 0.0; traps taken []; missing []; wrong []; data []

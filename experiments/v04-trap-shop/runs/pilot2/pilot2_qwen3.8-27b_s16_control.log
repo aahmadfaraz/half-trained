@@ -1,0 +1,32 @@
+groq:qwen/qwen3.8-27b seed 16 control: ['coffee', 'laundry', 'batteries', 'kettles'] traps [] budget $110
+   groq 429: waiting 6 s
+   1   0.2s in 749 out 34  1. browse {"category": "Coffee"} -> opened category Coffee
+   groq 429: waiting 6 s
+   2   0.2s in 751 out 41  2. open {"id": "B1"} -> opened B1: Ridgeback House Blend Whole Bean Coffee, 1 kg ($21.99)
+   groq 429: waiting 6 s
+   3   0.2s in 749 out 34  3. add {"id": "B1", "qty": 1} -> added 1 × B1 to the cart
+   groq 429: waiting 7 s
+   4   0.2s in 797 out 40  4. browse {"category": "Laundry"} -> opened category Laundry
+   groq 429: waiting 7 s
+   5   0.5s in 831 out 58  5. add {"id": "L1", "qty": 1} -> error: add works only on a product's own page: open L1 first
+   groq 429: waiting 7 s
+   6   0.3s in 883 out 62  6. open {"id": "L1"} -> opened L1: FreshFold Liquid Laundry Detergent, 2.5 L ($12.49)
+   groq 429: waiting 7 s
+   7   0.5s in 864 out 46  7. add {"id": "L1", "qty": 1} -> added 1 × L1 to the cart
+   groq 429: waiting 7 s
+   8   0.4s in 913 out 35  8. browse {"category": "Batteries"} -> opened category Batteries
+   groq 429: waiting 8 s
+   9   0.4s in 949 out 70  9. open {"id": "P2"} -> opened P2: PowerCell AA Batteries, 20 pack ($9.99)
+   groq 429: waiting 7 s
+  10   0.5s in 929 out 38  10. add {"id": "P2", "qty": 1} -> added 1 × P2 to the cart
+   groq 429: waiting 8 s
+  11   0.2s in 976 out 43  11. browse {"category": "Kettles"} -> opened category Kettles
+   groq 429: waiting 8 s
+  12   0.3s in 1029 out 61  12. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+   groq 429: waiting 8 s
+  13   0.4s in 1031 out 49  13. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+   groq 429: waiting 9 s
+  14   0.2s in 1077 out 43  14. checkout {} -> opened checkout
+   groq 429: waiting 9 s
+  15   0.3s in 1145 out 55  15. place_order {} -> placed the order: $74.46
+  -> ordered: spent $74.46 vs cheapest $74.46; wasted 0.0; traps taken []; missing []; wrong []; data []

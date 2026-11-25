@@ -1,0 +1,7 @@
+{
+ "probe": "gemini-4-hydrogen, one request, no retries, seed 7 trap step 1",
+ "date_utc": "2026-11-25T17:39:14Z",
+ "http": 503,
+ "error": "{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+ "seconds": 12.9
+}

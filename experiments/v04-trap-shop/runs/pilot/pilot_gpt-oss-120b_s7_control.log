@@ -1,0 +1,29 @@
+groq:openai/gpt-oss-120b seed 7 control: ['coffee', 'chargers', 'laundry', 'headphones'] traps [] budget $190
+   1   1.6s in 738 out 160  1. invalid  -> no valid action in the reply
+   groq 429: waiting 5 s
+   2   1.1s in 756 out 285  2. browse {"category": "Coffee"} -> opened category Coffee
+   groq 429: waiting 5 s
+   3   1.1s in 751 out 157  3. add {"id": "B3", "qty": 1} -> added 1 × B3 to the cart
+   groq 429: waiting 5 s
+   4   1.0s in 794 out 219  4. invalid  -> no valid action in the reply
+   5   1.5s in 800 out 157  5. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   6   1.2s in 809 out 287  6. add {"id": "C1", "qty": 1} -> added 1 × C1 to the cart
+   groq 429: waiting 9 s
+   7   0.8s in 853 out 127  7. invalid  -> no valid action in the reply
+   groq 429: waiting 7 s
+   8   0.8s in 858 out 134  8. browse {"category": "Laundry"} -> opened category Laundry
+   groq 429: waiting 7 s
+   9   1.0s in 882 out 234  9. add {"id": "L1", "qty": 1} -> added 1 × L1 to the cart
+   groq 429: waiting 7 s
+  10   0.4s in 930 out 99  10. browse {"category": "Headphones"} -> opened category Headphones
+   groq 429: waiting 7 s
+  11   1.3s in 934 out 359  11. invalid  -> no valid action in the reply
+   groq 429: waiting 8 s
+  12   1.4s in 956 out 176  12. invalid  -> no valid action in the reply
+   groq 429: waiting 4 s
+  13   1.3s in 968 out 191  13. add {"id": "H1", "qty": 1} -> added 1 × H1 to the cart
+   groq 429: waiting 4 s
+  14   0.7s in 1009 out 192  14. checkout {} -> opened checkout
+   groq 429: waiting 8 s
+  15   0.5s in 1037 out 69  15. place_order {} -> placed the order: $136.47
+  -> ordered: spent $136.47 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee']; wrong [{'id': 'B3', 'qty': 1, 'reason': 'not on the list'}]; data []
