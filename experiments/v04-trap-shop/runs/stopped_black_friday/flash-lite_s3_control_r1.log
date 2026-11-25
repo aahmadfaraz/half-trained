@@ -1,0 +1,19 @@
+gemini:gemini-3.5-flash-lite seed 3 control: ['laundry', 'airfryers', 'batteries', 'chargers'] traps [] budget $150
+   1   1.3s in 768 out 36  1. search {"query": "liquid laundry detergent"} -> searched "liquid laundry detergent": 5 results
+   2   0.8s in 779 out 63  2. open {"id": "L1"} -> opened L1: FreshFold Liquid Laundry Detergent, 2.5 L ($12.49)
+   gemini 503: waiting 20 s
+   3   2.6s in 772 out 55  3. add {"id": "L1", "qty": 1} -> added 1 × L1 to the cart
+   gemini 429: waiting 13 s
+   4   0.9s in 821 out 40  4. search {"query": "air fryer"} -> searched "air fryer": 5 results
+   5   1.3s in 858 out 69  5. open {"id": "A1"} -> opened A1: Crispo 4.5 L Air Fryer ($59.99)
+   6   0.8s in 878 out 56  6. add {"id": "A1", "qty": 1} -> added 1 × A1 to the cart
+   7   8.5s in 924 out 49  7. search {"query": "AA batteries 20"} -> searched "AA batteries 20": 6 results
+   8   0.9s in 979 out 94  8. open {"id": "P2"} -> opened P2: PowerCell AA Batteries, 20 pack ($9.99)
+   9   1.2s in 925 out 66  9. add {"id": "P2", "qty": 1} -> added 1 × P2 to the cart
+  10   1.6s in 971 out 44  10. search {"query": "Volta wall charger 30W"} -> searched "Volta wall charger 30W": 4 results
+  11   0.9s in 1017 out 38  11. open {"id": "C1"} -> opened C1: Volta 30W USB-C Wall Charger ($24.99)
+  12   1.6s in 1051 out 79  12. add {"id": "C1", "qty": 1} -> added 1 × C1 to the cart
+  13   1.4s in 1099 out 49  13. cart {} -> opened the cart
+  14   0.9s in 1071 out 32  14. checkout {} -> opened checkout
+  15   4.4s in 1172 out 39  15. place_order {} -> placed the order: $107.46
+  -> ordered: spent $107.46 vs cheapest $107.46; wasted 0.0; traps taken []; missing []; wrong []; data []

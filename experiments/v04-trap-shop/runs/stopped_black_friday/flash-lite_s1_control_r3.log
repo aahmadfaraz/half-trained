@@ -1,0 +1,9 @@
+gemini:gemini-3.5-flash-lite seed 1 control: ['kettles', 'airfryers', 'headphones', 'towels'] traps [] budget $240
+   1   0.8s in 737 out 38  1. search {"query": "kettle"} -> searched "kettle": 5 results
+   2   0.9s in 754 out 52  2. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+   3  13.1s in 757 out 52  3. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+   abort: daily quota: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+  -> provider_abort: spent $0.00 vs cheapest $178.47; wasted None; traps taken []; missing ['kettles', 'airfryers', 'headphones', 'towels']; wrong []; data []

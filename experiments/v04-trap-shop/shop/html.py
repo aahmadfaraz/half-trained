@@ -102,7 +102,7 @@ class Page:
                 f'<form class="sbox" action="/do"><input type="hidden" name="action" value="search"><input name="query" value="{q}" placeholder="Search Larkspur Market"><button>Search</button></form>'
                 f'<a class="cartb" href="{self.href(action="cart")}">Cart <b>{n}</b> {money(s.subtotal())}</a></div>'
                 f'<div class="nav">' + "".join(f'<a href="{self.href(action="browse", category=k)}">{v}</a>' for k, v in CATS.items()) + "</div>"
-                f'<div class="banner"><span>BLACK FRIDAY WEEK</span> · deals across the store · free delivery on every order</div>')
+                f'<div class="banner"><span>WHITE FRIDAY WEEK</span> · deals across the store · free delivery on every order</div>')
         note = ""
         if s.note: note = f'<div class="note{" err" if s.note.startswith("Error") else ""}">{escape(s.note)}</div>'
         body = getattr(self, "p_" + kind)(arg)
@@ -112,7 +112,7 @@ class Page:
     def p_home(self, _):
         cats = "".join(f'<a class="cat" href="{self.href(action="browse", category=k)}"><div class="img" style="background:{TINT[k]}">{svg(k)}</div>{v}</a>' for k, v in CATS.items() if k != "giftcards")
         deals = "".join(self.card(p) for p in self.s.deals())
-        return (f'<div class="hero"><h1>Black Friday Week</h1><p>Big savings on everyday essentials, all week long.</p></div>'
+        return (f'<div class="hero"><h1>White Friday Week</h1><p>Big savings on everyday essentials, all week long.</p></div>'
                 f'<div class="home">{cats}</div><h1>Today\'s deals</h1><div class="grid">{deals}</div>')
 
     def p_search(self, q):

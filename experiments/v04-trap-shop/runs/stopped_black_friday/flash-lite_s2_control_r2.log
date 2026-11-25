@@ -1,0 +1,18 @@
+gemini:gemini-3.5-flash-lite seed 2 control: ['headphones', 'towels', 'batteries', 'kettles'] traps [] budget $180
+   1   1.8s in 737 out 44  1. search {"query": "wireless over ear headphones noise cancelling"} -> searched "wireless over ear headphones noise cancelling": 6 results
+   2   1.0s in 815 out 44  2. open {"id": "H2"} -> opened H2: Vellum Studio Wireless Over-Ear Headphones, Noise Cancelling ($96.00)
+   3   9.6s in 798 out 52  3. add {"id": "H2", "qty": 1} -> added 1 × H2 to the cart
+   4   1.0s in 847 out 34  4. search {"query": "paper towels"} -> searched "paper towels": 6 results
+   5   1.2s in 877 out 44  5. open {"id": "T1"} -> opened T1: SoftLeaf Paper Towels, 8 rolls ($11.99)
+   6   1.0s in 815 out 63  6. add {"id": "T1", "qty": 1} -> added 1 × T1 to the cart
+   7   0.9s in 861 out 39  7. search {"query": "AA batteries 20"} -> searched "AA batteries 20": 6 results
+   8   1.4s in 965 out 39  8. open {"id": "P1"} -> opened P1: Zappa AA Alkaline Batteries, 24 pack ($14.99)
+   9   1.0s in 916 out 53  9. add {"id": "P1", "qty": 1} -> added 1 × P1 to the cart
+  10   0.9s in 963 out 45  10. search {"query": "electric kettle 1.5l"} -> searched "electric kettle 1.5l": 5 results
+  11   0.9s in 1030 out 61  11. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+  12   0.8s in 1029 out 47  12. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+  13   0.9s in 1074 out 28  13. cart {} -> opened the cart
+   gemini 429: waiting 36 s
+  14   0.9s in 1054 out 45  14. checkout {} -> opened checkout
+  15   0.9s in 1154 out 50  15. place_order {} -> placed the order: $152.97
+  -> ordered: spent $152.97 vs cheapest $128.47; wasted 24.5; traps taken []; missing []; wrong []; data []

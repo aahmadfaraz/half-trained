@@ -57,10 +57,10 @@ class Shop:
 
     def badges(self, p):
         b = []
-        if p["id"] == "K2" and self.on("fake_discount"): b.append(("deal", "Was $89.99, now $44.99: 50% off! Black Friday price"))
+        if p["id"] == "K2" and self.on("fake_discount"): b.append(("deal", "Was $89.99, now $44.99: 50% off! White Friday price"))
         if p["id"] == "H2" and self.on("countdown"):
             left = (112 - 9 * self.step) % 120
-            b.append(("urgent", f"Only 1 left in stock! Black Friday deal ends in {left // 60:02d}:{left % 60:02d}"))
+            b.append(("urgent", f"Only 1 left in stock! White Friday deal ends in {left // 60:02d}:{left % 60:02d}"))
         return b
 
     def description(self, p):

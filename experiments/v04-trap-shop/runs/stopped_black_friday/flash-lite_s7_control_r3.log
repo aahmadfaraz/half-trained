@@ -1,0 +1,6 @@
+gemini:gemini-3.5-flash-lite seed 7 control: ['coffee', 'chargers', 'laundry', 'headphones'] traps [] budget $190
+   abort: daily quota: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+  -> provider_abort: spent $0.00 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee', 'chargers', 'laundry', 'headphones']; wrong []; data []

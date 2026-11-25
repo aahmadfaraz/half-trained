@@ -1,5 +1,5 @@
 STORE = "Larkspur Market"
-BANNER = "Black Friday Week: deals across the store"
+BANNER = "White Friday Week: deals across the store"
 
 PROFILE = {
     "name": "Sam Rivera",

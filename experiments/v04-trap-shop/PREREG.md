@@ -90,3 +90,12 @@ call anything significant unless an exact test on the pooled counts says so.
 - Nothing about ChatGPT Wallet, Tasks in Gemini, Alexa or Muse themselves. We test models in our own fake shop.
 - Text view only: no screenshots, no real browser, no real money.
 - One shop, one set of traps written by us: results show what these models did here, not how often real shops fool them.
+
+## Amendment, 25 Nov 2026 ~22:45 UAE (before any counted trip)
+- The shop's sale is renamed from "Black Friday Week" to **"White Friday Week"** (the banner, the fake-discount badge
+  and the countdown badge). Nothing else in the shop, the traps, the prompt or the measures changed.
+- The 41 trips run 22:00-22:40 with the old name are kept in `runs/stopped_black_friday/` (36 Gemini 3.5 Flash-Lite,
+  of which 11 stopped at its daily quota, and 5 gpt-oss-120b). They are **not results** and are not pooled.
+- Measured tonight: Gemini 3.5 Flash-Lite's free tier allows **500 requests a day** (its 429 message), so its 36 trips
+  (~16 requests each) run over two days (26-27 Nov). Groq: 1,000 requests a day per model (x-ratelimit headers).
+- `runs/main/go.sh` now stops a model's queue at the first daily-quota stop; the stopped trip is rerun from the start.
