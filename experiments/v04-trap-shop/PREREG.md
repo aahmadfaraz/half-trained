@@ -107,3 +107,10 @@ call anything significant unless an exact test on the pooled counts says so.
   the HTML or the photos; its text view changes only by the store name.
 - Two trips started after the first amendment were stopped before finishing at the user's request (design review
   first); their partial logs are in `runs/stopped_partial/`. No counted trip has run yet.
+
+## Amendment 3, 26 Nov 2026 ~00:50 UAE (before any counted trip finished)
+- Groq now limits qwen/qwen3.8-27b to **1,000 output tokens per minute** and refuses any request whose output limit is
+  higher ("Request too large… OTPM: Limit 1000, Requested 1412"), so those requests could never succeed. Qwen's output
+  limit is set to **1,000 tokens** (the others keep 4,096). In the pilots Qwen never wrote more than 128 tokens in a step.
+- The first trips started at 00:35 were stopped to make this change; their partial logs are in `runs/stopped_partial/`
+  (`*_otpm_stop.*`). Logs now print the provider's reason for every wait.
