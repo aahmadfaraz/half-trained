@@ -130,3 +130,12 @@ call anything significant unless an exact test on the pooled counts says so.
   `llm.py` now reads milliseconds too. Per the existing rule, provider aborts are not results: the trip's files move to
   `runs/main/aborted/` and the trip is run again in its place in the order.
 - Abort messages now hide the provider's organization ID, like the wait messages already did.
+
+## Amendment 6, 26 Nov 2026 12:20 UAE (case study, nothing the models see changed)
+- Gemini 4 Hydrogen answered one test request at 12:10 UAE (Gemini 3.8 Flash still answered 503 "high demand"), so
+  its seed 7 trap trip started. Google's free tier counts the 503 "high demand" replies against the model's daily
+  limit (`generate_content_free_tier_requests`, limit 20): 1 test request + 8 replies of 503 + 11 trip steps = 20,
+  then 429 and `provider_abort` after 11 steps, no order placed. Not a result: its files moved to `runs/case/aborted/`.
+- Fri 27 Nov, after the daily reset (~12:00 UAE) and before the 14:00 cutoff: the Hydrogen seed 7 trap trip runs
+  again, with no test request first. The control trip runs only if requests are left that day; otherwise it is
+  reported as not run. Gemini 3.8 Flash gets one request then; if it answers, its seed 7 trap trip runs the same way.
