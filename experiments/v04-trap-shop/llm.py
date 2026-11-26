@@ -8,7 +8,7 @@ PATIENCE = 6 * 3600
 
 
 class Abort(Exception):
-    pass
+    def __init__(self, msg): super().__init__(re.sub(r"org_[A-Za-z0-9]+", "org_<id>", msg))
 
 
 def load_env():
@@ -20,8 +20,8 @@ def load_env():
 
 
 def quota_wait(kind, msg, i):
-    m = re.search(r"try again in (?:(\d+)h)?(?:(\d+)m(?!s))?(?:([\d.]+)s)?", msg)
-    if m and any(m.groups()): return int(m[1] or 0) * 3600 + int(m[2] or 0) * 60 + float(m[3] or 0) + 2
+    m = re.search(r"try again in (?:(\d+)h)?(?:(\d+)m(?!s))?(?:([\d.]+)s)?(?:([\d.]+)ms)?", msg)
+    if m and any(m.groups()): return int(m[1] or 0) * 3600 + int(m[2] or 0) * 60 + float(m[3] or 0) + float(m[4] or 0) / 1000 + 2
     if re.search(r"per.?day|daily|\bRPD\b|\bTPD\b|PerDay", msg, re.I): raise Abort("daily quota: " + msg[:300])
     m = re.search(r"retryDelay\W+([\d.]+)s", msg)
     return float(m[1]) + 2 if m else min(90, 5 * 2 ** min(i, 4))

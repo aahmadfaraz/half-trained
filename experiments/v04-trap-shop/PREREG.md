@@ -123,3 +123,10 @@ call anything significant unless an exact test on the pooled counts says so.
   vs control comparison uses only seeds where both trips of that repeat finished. Unfinished repeats are reported.
 - Gemini 3.5 Flash-Lite (500 requests/day) is expected to finish all 3 repeats before the cutoff; Qwen and gpt-oss will
   likely finish 1-2 repeats. Results will say how many trips each model completed.
+
+## Amendment 5, 26 Nov 2026 07:40 UAE (harness bug, nothing the models see changed)
+- Groq sometimes says "try again in 864ms". The wait parser only read hours, minutes and seconds, so it treated this as
+  a daily-quota stop: trip `qwen3.8-27b_s2_trap_r1` ended as `provider_abort` after 2 steps and Qwen's queue stopped.
+  `llm.py` now reads milliseconds too. Per the existing rule, provider aborts are not results: the trip's files move to
+  `runs/main/aborted/` and the trip is run again in its place in the order.
+- Abort messages now hide the provider's organization ID, like the wait messages already did.
