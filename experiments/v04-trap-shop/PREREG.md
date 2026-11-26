@@ -139,3 +139,12 @@ call anything significant unless an exact test on the pooled counts says so.
 - Fri 27 Nov, after the daily reset (~12:00 UAE) and before the 14:00 cutoff: the Hydrogen seed 7 trap trip runs
   again, with no test request first. The control trip runs only if requests are left that day; otherwise it is
   reported as not run. Gemini 3.8 Flash gets one request then; if it answers, its seed 7 trap trip runs the same way.
+
+## Amendment 7, 26 Nov 2026 19:55 UAE (case studies only, nothing the models see changed)
+- The case studies keep the original window, any time on 26-27 Nov (UAE), not only before Friday's 14:00 cutoff.
+  They stay reported apart from the main runs.
+- Each model gets one test request (no retries) at fixed times: Thu 20:00; Fri 03:00, 07:00, 10:00 (Gemini 3.8 Flash
+  only, Hydrogen's requests for that day are used up); Fri 12:03, 15:00, 18:00, 21:00. Every test is logged in
+  `runs/case/probes.log`. When a test is answered, the model's seed 7 trap trip starts at once, then its control trip.
+- In case-study trips only, a 503 "high demand" reply is retried after 240 s instead of 20-40 s (`WAIT_5XX=240`,
+  `MAX_5XX=40` in `llm.py`), so short spikes don't use up the 20 requests a day. Main runs are unchanged.

@@ -5,6 +5,7 @@ CTX = ssl.create_default_context(cafile="/etc/ssl/cert.pem") if os.path.exists("
 URLS = {"groq": "https://api.groq.com/openai/v1/chat/completions", "openrouter": "https://openrouter.ai/api/v1/chat/completions"}
 KEYS = {"groq": "GROQ_API_KEY", "openrouter": "OPENROUTER_API_KEY", "gemini": "GOOGLE_AI_STUDIO_API_KEY"}
 PATIENCE = 6 * 3600
+WAIT_5XX, MAX_5XX = float(os.environ.get("WAIT_5XX", 0)), int(os.environ.get("MAX_5XX", 8))
 
 
 class Abort(Exception):
@@ -48,9 +49,9 @@ def http(kind, url, headers, body, events, retry=True):
         events.append({"t": round(time.time(), 1), "code": code, "msg": re.sub(r"org_[A-Za-z0-9]+", "org_<id>", msg)[:600]})
         if not retry: raise Abort(f"HTTP {code} (no retries): {msg[:300]}")
         if code == 429: wait = quota_wait(kind, msg, i)
-        elif code >= 500: fails += 1; wait = min(300, 10 * 2 ** min(fails, 5))
+        elif code >= 500: fails += 1; wait = WAIT_5XX or min(300, 10 * 2 ** min(fails, 5))
         else: raise RuntimeError(f"HTTP {code}: {msg[:300]}")
-        if fails > 8 or waited + wait > PATIENCE: raise Abort(f"HTTP {code}: {msg[:300]}")
+        if fails > MAX_5XX or waited + wait > PATIENCE: raise Abort(f"HTTP {code}: {msg[:300]}")
         print(f"   {kind} {code}: waiting {wait:.0f} s :: " + re.sub(r"org_[A-Za-z0-9]+", "org_<id>", re.sub(r"\s+", " ", msg))[:220], flush=True)
         time.sleep(wait); waited += wait; i += 1
 
