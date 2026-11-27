@@ -59,6 +59,7 @@ def main():
     ap.add_argument("--cond", choices=["trap", "control"], required=True); ap.add_argument("--out", required=True)
     ap.add_argument("--max-steps", type=int, default=30); ap.add_argument("--max-out", type=int, default=4096)
     ap.add_argument("--no-retry", action="store_true", help="one HTTP attempt per request (no waiting on 429/503)")
+    ap.add_argument("--memory", action="store_true", help="exploratory: the step list also carries the model's own earlier replies")
     a = ap.parse_args(); load_env()
     trip = make_trip(a.seed, a.cond); shop = Shop(trip); llm = LLM(a.model, a.max_out, retry=not a.no_retry); head = task(trip)
     hist, status, log = [], None, open(a.out + ".jsonl", "w")
@@ -89,6 +90,7 @@ def main():
         if shop.order: status = "ordered"
         short = json.dumps({k: v for k, v in (act or {}).items() if k != "action"}) if act else ""
         hist.append(f"{shop.step}. {(act or {}).get('action', 'invalid')} {short} -> {res}")
+        if a.memory: hist[-1] += "\n   you wrote: " + re.sub(r"\s+", " ", re.sub(r"\{.*\}\s*$", "", (r2 or r)["text"] or "", flags=re.S)).strip()[:400]
         rec = {"step": shop.step, "prompt_v": PROMPT_V, "page": page, "reply": r["text"], "thinking": r["thinking"], "action": act, "result": res,
                "usage": r["usage"], "seconds": r["seconds"], "waited": r["waited"], "retries": r["retries"], "served": r["served"], "stop": r["stop"]}
         if r2: rec["reprompt"] = {"reply": r2["text"], "thinking": r2["thinking"], "usage": r2["usage"], "seconds": r2["seconds"], "waited": r2["waited"]}
@@ -96,7 +98,7 @@ def main():
         log.write(json.dumps(rec, ensure_ascii=False) + "\n"); log.flush()
         print(f"  {shop.step:2d} {r['seconds']:5.1f}s in {r['usage'].get('in')} out {r['usage'].get('out')}  {hist[-1][:150]}", flush=True)
     rc = shop.receipt(status or "unknown")
-    rc.update({"model": a.model, "seed": a.seed, "cond": a.cond, "trip": trip, "prompt_v": PROMPT_V, "rate_limit_events": llm.events,
+    rc.update({"model": a.model, "seed": a.seed, "cond": a.cond, "memory": a.memory, "trip": trip, "prompt_v": PROMPT_V, "rate_limit_events": llm.events,
                "last_ratelimit_headers": llm.limits, "calls": calls, "reprompts": reprompts, "invalid_steps": invalid,
                "tokens_in": tok_in, "tokens_out": tok_out, "wall_seconds": round(time.time() - t_start, 1), "date_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
     json.dump(rc, open(a.out + ".receipt.json", "w"), indent=1, ensure_ascii=False)
