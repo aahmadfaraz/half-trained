@@ -148,3 +148,8 @@ call anything significant unless an exact test on the pooled counts says so.
   `runs/case/probes.log`. When a test is answered, the model's seed 7 trap trip starts at once, then its control trip.
 - In case-study trips only, a 503 "high demand" reply is retried after 240 s instead of 20-40 s (`WAIT_5XX=240`,
   `MAX_5XX=40` in `llm.py`), so short spikes don't use up the 20 requests a day. Main runs are unchanged.
+
+## Amendment 8, 27 Nov 2026 12:15 UAE (case-study test times only)
+- 12:00-18:00 UAE is midnight to 6 am in California, the quietest hours. Both 12:07 tests (Hydrogen, Gemini 3.8 Flash)
+  answered 503. The remaining test times move from 15:00, 18:00 and 21:00 to **13:30, 15:00 and 16:30** UAE, still
+  three more tests per model and one request each. Everything else in amendment 7 stands.
