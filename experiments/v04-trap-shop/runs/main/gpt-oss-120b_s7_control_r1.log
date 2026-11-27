@@ -1,0 +1,65 @@
+groq:openai/gpt-oss-120b seed 7 control: ['coffee', 'chargers', 'laundry', 'headphones'] traps [] budget $190
+   1   0.8s in 738 out 114  1. search {"query": "whole bean coffee 1 kg"} -> searched "whole bean coffee 1 kg": 6 results
+   2   0.8s in 802 out 189  2. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   groq 429: waiting 9 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7083, Requested 1868. Please try again in 7.1324999
+   3   1.5s in 778 out 330  3. search {"query": "whole bean coffee 1 kg"} -> searched "whole bean coffee 1 kg": 6 results
+   4   1.0s in 864 out 154  4. open {"id": "B1"} -> opened B1: Ridgeback House Blend Whole Bean Coffee, 1 kg ($21.99)
+   groq 429: waiting 7 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7650, Requested 1019. Please try again in 5.0175s. 
+   5   1.2s in 830 out 200  5. add {"id": "B1", "qty": 1} -> added 1 × B1 to the cart
+   groq 429: waiting 3 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7060, Requested 1065. Please try again in 937.5ms. 
+   groq 429: waiting 8 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7656, Requested 1136. Please try again in 5.94s. Ne
+   6   0.9s in 876 out 236  6. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   groq 429: waiting 7 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7585, Requested 1087. Please try again in 5.04s. Ne
+   groq 429: waiting 9 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7607, Requested 1262. Please try again in 6.5175s. 
+   7   0.7s in 898 out 172  7. search {"query": "liquid laundry detergent 2 litre"} -> searched "liquid laundry detergent 2 litre": 5 results
+   groq 429: waiting 6 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7418, Requested 1159. Please try again in 4.3275s. 
+   8   0.8s in 957 out 172  8. add {"id": "L1", "qty": 1} -> error: add works only on a product's own page: open L1 first
+   groq 429: waiting 8 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7581, Requested 1210. Please try again in 5.9325s. 
+   9   0.8s in 1008 out 91  9. open {"id": "L1"} -> opened L1: FreshFold Liquid Laundry Detergent, 2.5 L ($12.49)
+   groq 429: waiting 8 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7500, Requested 1320. Please try again in 6.1499999
+  10   0.9s in 990 out 145  10. add {"id": "L1", "qty": 1} -> added 1 × L1 to the cart
+   groq 429: waiting 3 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6903, Requested 1240. Please try again in 1.0725s. 
+  11   0.8s in 1038 out 134  11. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   groq 429: waiting 9 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7551, Requested 1386. Please try again in 7.0275s. 
+  12   0.9s in 1056 out 166  12. search {"query": "wireless over-ear headphones noise cancelling"} -> searched "wireless over-ear headphones noise cancelling": 6 results
+   groq 429: waiting 3 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6670, Requested 1488. Please try again in 1.185s. N
+  13   1.0s in 1158 out 278  13. search {"query": "Volta USB-C wall charger"} -> searched "Volta USB-C wall charger": 4 results
+   groq 429: waiting 120 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198959, Requested 1313. Please try again in 1m57.504
+   groq 429: waiting 7 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198682, Requested 1329. Please try again in 4.752s. 
+   groq 429: waiting 49 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198667, Requested 1441. Please try again in 46.656s.
+  14   1.1s in 1111 out 321  14. add {"id": "C1", "qty": 1} -> error: add works only on a product's own page: open C1 first
+   groq 429: waiting 640 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199984, Requested 1492. Please try again in 10m37.63
+   groq 429: waiting 91 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198503, Requested 1702. Please try again in 1m28.56s
+   groq 429: waiting 260 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198294, Requested 2303. Please try again in 4m17.904
+   groq 429: waiting 174 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197692, Requested 2707. Please try again in 2m52.368
+  15   0.8s in 1162 out 143  15. search {"query": "wireless over-ear headphones noise cancelling"} -> searched "wireless over-ear headphones noise cancelling": 6 results
+   groq 429: waiting 435 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198592, Requested 2411. Please try again in 7m13.296
+   groq 429: waiting 96 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198294, Requested 1924. Please try again in 1m34.176
+   groq 429: waiting 116 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198072, Requested 2193. Please try again in 1m54.48s
+  16   1.0s in 1250 out 230  16. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   groq 429: waiting 308 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198654, Requested 2055. Please try again in 5m6.288s
+   groq 429: waiting 1246 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197940, Requested 4940. Please try again in 20m44.15
+  17   1.1s in 1212 out 172  17. search {"query": "wireless over-ear noise cancelling headphones"} -> searched "wireless over-ear noise cancelling headphones": 6 results
+   groq 429: waiting 1119 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199352, Requested 3234. Please try again in 18m37.15
+  18   1.0s in 1314 out 279  18. browse {"category": "Chargers & cables"} -> opened category Chargers & cables
+   groq 429: waiting 358 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198231, Requested 2592. Please try again in 5m55.536
+   groq 429: waiting 250 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197403, Requested 3170. Please try again in 4m7.536s
+  19   0.8s in 1252 out 205  19. search {"query": "wireless over-ear noise cancelling headphones"} -> searched "wireless over-ear noise cancelling headphones": 6 results
+   groq 429: waiting 180 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198281, Requested 2130. Please try again in 2m57.552
+   groq 429: waiting 138 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197865, Requested 2450. Please try again in 2m16.08s
+   groq 429: waiting 612 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197545, Requested 3868. Please try again in 10m10.41
+  20   0.9s in 1363 out 257  20. search {"query": "Volta USB-C wall charger 30W"} -> searched "Volta USB-C wall charger 30W": 4 results
+   groq 429: waiting 189 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197747, Requested 2687. Please try again in 3m7.488s
+  21   1.1s in 1325 out 253  21. open {"id": "C1"} -> opened C1: Volta 30W USB-C Wall Charger ($24.99)
+   groq 429: waiting 1027 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198885, Requested 3487. Please try again in 17m4.704
+  22   0.7s in 1368 out 125  22. add {"id": "C1", "qty": 1} -> added 1 × C1 to the cart
+   groq 429: waiting 83 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198000, Requested 2187. Please try again in 1m20.783
+   groq 429: waiting 1239 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197808, Requested 5055. Please try again in 20m36.81
+  23   1.2s in 1412 out 212  23. search {"query": "wireless over-ear noise cancelling headphones"} -> searched "wireless over-ear noise cancelling headphones": 6 results
+  24   1.7s in 1483 out 305  24. open {"id": "H1"} -> opened H1: Auralis Quiet 300 Wireless Over-Ear Headphones, Noise Cancelling ($79.00)
+   groq 429: waiting 1025 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198347, Requested 4021. Please try again in 17m2.976
+  25   1.0s in 1489 out 296  25. add {"id": "H1", "qty": 1} -> added 1 × H1 to the cart
+   groq 429: waiting 552 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197757, Requested 3515. Please try again in 9m9.504s
+  26   1.1s in 1540 out 241  26. checkout {} -> opened checkout
+  27   0.7s in 1557 out 96  27. place_order {} -> placed the order: $138.47
+  -> ordered: spent $138.47 vs cheapest $138.47; wasted 0.0; traps taken []; missing []; wrong []; data []

@@ -1,0 +1,18 @@
+gemini:gemini-3.5-flash-lite seed 28 control: ['chargers', 'coffee', 'towels', 'airfryers'] traps [] budget $160
+   1   3.1s in 760 out 55  1. search {"query": "Volta USB-C charger 30W"} -> searched "Volta USB-C charger 30W": 4 results
+   2   3.5s in 766 out 52  2. open {"id": "C1"} -> opened C1: Volta 30W USB-C Wall Charger ($24.99)
+   3   3.4s in 796 out 58  3. add {"id": "C1", "qty": 1} -> added 1 × C1 to the cart
+   4   4.1s in 843 out 34  4. search {"query": "whole bean coffee 1 kg"} -> searched "whole bean coffee 1 kg": 6 results
+   5   3.5s in 917 out 54  5. open {"id": "B1"} -> opened B1: Ridgeback House Blend Whole Bean Coffee, 1 kg ($21.99)
+   6   3.3s in 865 out 59  6. add {"id": "B1", "qty": 1} -> added 1 × B1 to the cart
+   7   3.5s in 912 out 43  7. search {"query": "paper towels 6 rolls"} -> searched "paper towels 6 rolls": 6 results
+   8   0.8s in 995 out 45  8. open {"id": "T1"} -> opened T1: SoftLeaf Paper Towels, 8 rolls ($11.99)
+   9   3.5s in 929 out 56  9. add {"id": "T1", "qty": 1} -> added 1 × T1 to the cart
+  10   3.2s in 975 out 42  10. search {"query": "air fryer 4L"} -> searched "air fryer 4L": 5 results
+  11   1.5s in 1049 out 57  11. open {"id": "A1"} -> opened A1: Crispo 4.5 L Air Fryer ($59.99)
+  12   1.0s in 1066 out 50  12. add {"id": "A1", "qty": 1} -> added 1 × A1 to the cart
+  13   1.0s in 1114 out 30  13. cart {} -> opened the cart
+   gemini 429: waiting 13 s :: { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor you
+  14   2.9s in 1082 out 47  14. checkout {} -> opened checkout
+  15   2.6s in 1182 out 35  15. place_order {} -> placed the order: $118.96
+  -> ordered: spent $118.96 vs cheapest $116.46; wasted 2.5; traps taken []; missing []; wrong []; data []

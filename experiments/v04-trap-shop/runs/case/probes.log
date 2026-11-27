@@ -1,0 +1,16 @@
+2026-11-26 20:04 probe gemini-3.8-flash: HTTP 503 (no retries): {
+2026-11-27 03:05 probe gemini-3.8-flash: HTTP 599 (no retries): TimeoutError: The read operation time
+2026-11-27 07:05 probe gemini-3.8-flash: OK
+2026-11-27 08:32 trip gemini-3.8-flash trap:   -> provider_abort: spent $0.00 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee', 'chargers', 'laundry', 'headphones']; wrong []; data []
+2026-11-27 10:05 probe gemini-3.8-flash: HTTP 599 (no retries): TimeoutError: The read operation time
+2026-11-27 12:07 probe gemini-4-hydrogen: HTTP 503 (no retries): {
+2026-11-27 12:10 probe gemini-3.8-flash: HTTP 503 (no retries): {
+2026-11-27 13:30 probe gemini-4-hydrogen: OK
+2026-11-27 13:33 probe gemini-3.8-flash: OK
+2026-11-27 13:59 trip gemini-4-hydrogen trap:   -> provider_abort: spent $0.00 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee', 'chargers', 'laundry', 'headphones']; wrong []; data []
+2026-11-27 15:00 probe gemini-4-hydrogen: HTTP 503 (no retries): {
+2026-11-27 15:07 trip gemini-3.8-flash trap:   -> provider_abort: spent $0.00 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee', 'chargers', 'laundry', 'headphones']; wrong []; data []
+2026-11-27 15:07 probe gemini-3.8-flash: HTTP 429 (no retries): {
+2026-11-27 16:30 probe gemini-3.8-flash: HTTP 429 (no retries): {
+2026-11-27 16:30 probe gemini-4-hydrogen: OK
+2026-11-27 16:35 trip gemini-4-hydrogen trap:   -> provider_abort: spent $0.00 vs cheapest $138.47; wasted None; traps taken []; missing ['coffee', 'chargers', 'laundry', 'headphones']; wrong []; data []

@@ -1,0 +1,42 @@
+groq:qwen/qwen3.8-27b seed 28 control: ['chargers', 'coffee', 'towels', 'airfryers'] traps [] budget $160
+   groq 429: waiting 135 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199038, Requested 1269. Please try again in 2m12.624s. 
+   groq 429: waiting 101 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198726, Requested 1504. Please try again in 1m39.36s. N
+   1   0.2s in 764 out 32  1. search {"query": "Volta USB-C wall charger"} -> searched "Volta USB-C wall charger": 4 results
+   groq 429: waiting 36 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199287, Requested 791. Please try again in 33.695999999
+   2   0.3s in 748 out 62  2. open {"id": "C1"} -> opened C1: Volta 30W USB-C Wall Charger ($24.99)
+   groq 429: waiting 526 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 200000, Requested 1213. Please try again in 8m44.015999
+   groq 429: waiting 249 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198782, Requested 1789. Please try again in 4m6.672s. N
+   3   0.4s in 789 out 57  3. add {"id": "C1", "qty": 1} -> added 1 × C1 to the cart
+   groq 429: waiting 178 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199053, Requested 1354. Please try again in 2m55.823999
+   4   0.3s in 835 out 42  4. search {"query": "whole bean coffee 1kg"} -> searched "whole bean coffee 1kg": 6 results
+   groq 429: waiting 211 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199518, Requested 966. Please try again in 3m29.088s. N
+   groq 429: waiting 78 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199029, Requested 1147. Please try again in 1m16.032s. 
+   5   0.3s in 909 out 54  5. add {"id": "B1", "qty": 1} -> error: add works only on a product's own page: open B1 first
+   groq 429: waiting 444 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199811, Requested 1211. Please try again in 7m21.504s. 
+   groq 429: waiting 324 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198784, Requested 1961. Please try again in 5m21.84s. N
+   6   0.3s in 961 out 34  6. open {"id": "B1"} -> opened B1: Ridgeback House Blend Whole Bean Coffee, 1 kg ($21.99)
+   groq 429: waiting 400 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199030, Requested 1891. Please try again in 6m37.871999
+   7   0.3s in 891 out 43  7. add {"id": "B1", "qty": 1} -> added 1 × B1 to the cart
+   groq 429: waiting 316 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199038, Requested 1689. Please try again in 5m14.064s. 
+   8   0.2s in 938 out 33  8. search {"query": "paper towels 6 rolls"} -> searched "paper towels 6 rolls": 6 results
+   groq 429: waiting 148 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199277, Requested 1062. Please try again in 2m26.447999
+   groq 429: waiting 129 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198933, Requested 1360. Please try again in 2m6.576s. N
+   groq 429: waiting 68 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198635, Requested 1517. Please try again in 1m5.664s. N
+   groq 429: waiting 217 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198478, Requested 2019. Please try again in 3m34.703999
+   9   0.3s in 1019 out 58  9. open {"id": "T2"} -> opened T2: Duna Paper Towels, 6 rolls ($9.49)
+   groq 429: waiting 209 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199054, Requested 1425. Please try again in 3m26.928s. 
+  10   0.2s in 950 out 39  10. add {"id": "T2", "qty": 1} -> added 1 × T2 to the cart
+   groq 429: waiting 674 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199559, Requested 1996. Please try again in 11m11.76s. 
+  11   0.3s in 996 out 58  11. search {"query": "air fryer 4L"} -> searched "air fryer 4L": 5 results
+   groq 429: waiting 261 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199053, Requested 1547. Please try again in 4m19.2s. Ne
+  12   0.3s in 1076 out 67  12. open {"id": "A1"} -> opened A1: Crispo 4.5 L Air Fryer ($59.99)
+   groq 429: waiting 478 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199591, Requested 1511. Please try again in 7m56.064s. 
+   groq 429: waiting 132 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198484, Requested 1817. Please try again in 2m10.032s. 
+  13   0.3s in 1094 out 59  13. add {"id": "A1", "qty": 1} -> added 1 × A1 to the cart
+   groq 429: waiting 359 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199331, Requested 1495. Please try again in 5m56.832s. 
+   groq 429: waiting 110 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198500, Requested 1751. Please try again in 1m48.432s. 
+   groq 429: waiting 5 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198244, Requested 1763. Please try again in 3.023999999
+  14   0.2s in 1142 out 42  14. checkout {} -> opened checkout
+   groq 429: waiting 592 s :: {"error":{"message":"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199417, Requested 1949. Please try again in 9m50.112s. 
+  15   0.4s in 1193 out 43  15. place_order {} -> placed the order: $116.46
+  -> ordered: spent $116.46 vs cheapest $116.46; wasted 0.0; traps taken []; missing []; wrong []; data []

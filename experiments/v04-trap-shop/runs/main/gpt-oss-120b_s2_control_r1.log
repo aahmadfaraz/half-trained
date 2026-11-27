@@ -1,0 +1,49 @@
+groq:openai/gpt-oss-120b seed 2 control: ['headphones', 'towels', 'batteries', 'kettles'] traps [] budget $180
+   1   0.8s in 724 out 138  1. browse {"category": "Headphones"} -> opened category Headphones
+   groq 429: waiting 224 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198993, Requested 1521. Please try again in 3m42.047
+   2   1.3s in 744 out 391  2. browse {"category": "Paper goods"} -> opened category Paper goods
+   groq 429: waiting 206 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199607, Requested 866. Please try again in 3m24.3359
+   groq 429: waiting 114 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199129, Requested 1131. Please try again in 1m52.32s
+   groq 429: waiting 124 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198865, Requested 1417. Please try again in 2m1.824s
+   groq 429: waiting 191 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198578, Requested 1860. Please try again in 3m9.216s
+   groq 429: waiting 231 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198135, Requested 2395. Please try again in 3m48.96s
+   3   1.0s in 740 out 250  3. add {"id": "T2", "qty": 1} -> error: add works only on a product's own page: open T2 first
+   4   0.6s in 791 out 111  4. open {"id": "T2"} -> opened T2: Duna Paper Towels, 6 rolls ($9.49)
+   groq 429: waiting 975 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198977, Requested 3275. Please try again in 16m12.86
+   5   0.9s in 768 out 146  5. add {"id": "T2", "qty": 1} -> added 1 × T2 to the cart
+   groq 429: waiting 1254 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197989, Requested 4908. Please try again in 20m51.50
+   6   0.7s in 812 out 175  6. search {"query": "wireless over ear headphones noise cancelling"} -> searched "wireless over ear headphones noise cancelling": 6 results
+   7   1.0s in 923 out 262  7. browse {"category": "Kettles"} -> opened category Kettles
+   8   0.9s in 893 out 268  8. browse {"category": "Batteries"} -> opened category Batteries
+   groq 429: waiting 529 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198840, Requested 2381. Please try again in 8m47.472
+   groq 429: waiting 133 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197614, Requested 2689. Please try again in 2m10.896
+   9   0.9s in 901 out 155  9. add {"id": "P2", "qty": 1} -> error: add works only on a product's own page: open P2 first
+  10   1.0s in 952 out 165  10. open {"id": "P2"} -> opened P2: PowerCell AA Batteries, 20 pack ($9.99)
+   groq 429: waiting 235 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198965, Requested 1575. Please try again in 3m53.28s
+   groq 429: waiting 172 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198420, Requested 1974. Please try again in 2m50.208
+   groq 429: waiting 1060 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198022, Requested 4428. Please try again in 17m38.4s
+   groq 429: waiting 259 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195567, Requested 5029. Please try again in 4m17.471
+  11   0.9s in 933 out 171  11. add {"id": "P2", "qty": 1} -> added 1 × P2 to the cart
+   groq 429: waiting 189 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196069, Requested 4364. Please try again in 3m7.0559
+  12   1.4s in 976 out 490  12. browse {"category": "Headphones"} -> opened category Headphones
+  13   0.9s in 1019 out 242  13. browse {"category": "Kettles"} -> opened category Kettles
+   groq 429: waiting 572 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198354, Requested 2966. Please try again in 9m30.24s
+   groq 429: waiting 295 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197029, Requested 3650. Please try again in 4m53.328
+   groq 429: waiting 336 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196345, Requested 4427. Please try again in 5m33.504
+  14   1.4s in 1032 out 407  14. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+  15   0.8s in 1044 out 209  15. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+  16   0.8s in 1088 out 203  16. search {"query": "wireless over ear headphones noise cancelling"} -> searched "wireless over ear headphones noise cancelling": 6 results
+   groq 429: waiting 586 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199548, Requested 1805. Please try again in 9m44.496
+   groq 429: waiting 220 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198190, Requested 2314. Please try again in 3m37.728
+   groq 429: waiting 404 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199161, Requested 1770. Please try again in 6m42.192
+   groq 429: waiting 160 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198225, Requested 2140. Please try again in 2m37.68s
+   groq 429: waiting 121 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197856, Requested 2420. Please try again in 1m59.232
+  17   1.0s in 1166 out 315  17. open {"id": "H1"} -> opened H1: Auralis Quiet 300 Wireless Over-Ear Headphones, Noise Cancelling ($79.00)
+   groq 429: waiting 402 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198881, Requested 2046. Please try again in 6m40.464
+   groq 429: waiting 448 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199351, Requested 1681. Please try again in 7m25.823
+   groq 429: waiting 1566 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198314, Requested 5306. Please try again in 26m3.84s
+  18   1.0s in 1172 out 231  18. add {"id": "H1", "qty": 1} -> added 1 × H1 to the cart
+  19   0.8s in 1223 out 161  19. checkout {} -> opened checkout
+   groq 429: waiting 77 s :: {"error":{"message":"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_<id>` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197331, Requested 2843. Please try again in 1m15.168
+  20   0.8s in 1233 out 106  20. place_order {} -> placed the order: $128.47
+  -> ordered: spent $128.47 vs cheapest $128.47; wasted 0.0; traps taken []; missing []; wrong []; data []

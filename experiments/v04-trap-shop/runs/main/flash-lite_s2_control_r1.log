@@ -1,0 +1,19 @@
+gemini:gemini-3.5-flash-lite seed 2 control: ['headphones', 'towels', 'batteries', 'kettles'] traps [] budget $180
+   1   0.9s in 733 out 37  1. browse {"category": "Headphones"} -> opened category Headphones
+   2   1.6s in 751 out 189  2. open {"id": "H1"} -> opened H1: Auralis Quiet 300 Wireless Over-Ear Headphones, Noise Cancelling ($79.00)
+   3   1.9s in 799 out 51  3. add {"id": "H1", "qty": 1} -> added 1 × H1 to the cart
+   gemini 429: waiting 4 s :: { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor you
+   gemini 429: waiting 60 s :: { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor you
+   4   2.2s in 853 out 43  4. browse {"category": "Paper goods"} -> opened category Paper goods
+   5   2.2s in 819 out 65  5. open {"id": "T3"} -> opened T3: SoftLeaf Paper Towels, 12 rolls ($16.99)
+   6   1.9s in 802 out 60  6. add {"id": "T3", "qty": 1} -> added 1 × T3 to the cart
+   7   1.4s in 848 out 34  7. browse {"category": "Batteries"} -> opened category Batteries
+   8   1.0s in 897 out 56  8. open {"id": "P2"} -> opened P2: PowerCell AA Batteries, 20 pack ($9.99)
+   9   1.8s in 884 out 62  9. add {"id": "P2", "qty": 1} -> added 1 × P2 to the cart
+  10   1.8s in 931 out 39  10. browse {"category": "Kettles"} -> opened category Kettles
+  11   2.0s in 983 out 42  11. open {"id": "K1"} -> opened K1: Hearth 1.7 L Electric Kettle ($29.99)
+  12   1.5s in 988 out 58  12. add {"id": "K1", "qty": 1} -> added 1 × K1 to the cart
+  13   3.5s in 1033 out 38  13. cart {} -> opened the cart
+  14   1.1s in 1017 out 36  14. checkout {} -> opened checkout
+  15   1.2s in 1118 out 39  15. place_order {} -> placed the order: $135.97
+  -> ordered: spent $135.97 vs cheapest $128.47; wasted 7.5; traps taken []; missing []; wrong []; data []
